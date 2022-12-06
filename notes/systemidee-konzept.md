@@ -30,13 +30,12 @@ TODO: Skript-Punkt "Interessenskonflikte klären" ?
   - vegane Produkte müssen als solche gelabelt sein
   - "Rechnungs-Namen" von jedem Gericht muss gegeben und in Restaurant-Kontext konsistent sein
     - Bsp: "Veganes Tofu-Schnitzel mit Pommes" → "VEG-SCHNITZEL-POMMES"
-- Verknüpfung bei jedem Gericht zum Starten des Bewertungs-Prozesses
+- Verknüpfung zum Starten des Bewertungs-Prozesses (Aufruf unseres Systems)
 
 ## Entwicklungsstufen
 
 1. oben beschrieben
 2. Userauthentifikation (→ zusätzliche Authentifizierungsmaßnahme gegen Scam-Bewertungen)
-3. Kassensystem generiert Code → extra Sicherheit (TODO: ist das nicht gegen unser Marketing-Argument (kein "Kassen-Plugin" nötig))
 
 ## Kosten
 

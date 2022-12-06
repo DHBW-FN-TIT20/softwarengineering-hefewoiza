@@ -1,2 +1,44 @@
 \section{Systemidee}
-Im Rahmen dieser \ac{OOA} soll das Softwaresytem \textit{\ac{aMRS}} konzeptioniert werden.
+
+Im Rahmen dieser \ac{OOA} soll das Softwaresystem \textit{\ac{aMRS}} konzeptioniert werden.
+
+Das Ziel des Systems ist die Verwirklichung der vom Auftraggeber gewünschten Erweiterung des Informationsportals zum Angebot von Tagesgerichten um eine authentische Bewertung veganer Gerichte. 
+
+\textit{\ac{aMRS}} verwaltet vegane Speisen des Informationsportals und bietet Kunden die Möglichkeit, ihr Essen zu bewerten.
+Diese Bewertungen können anschließend vom Informationsportal abgerufen werden.
+Um sicherzustellen, dass die Bewertungen authentisch sind, verifiziert das System den Kunden als tatsächlichen Käufer und überprüft die Bewertungen zusätzlich auf ihre Inhalte.
+
+\textit{\ac{aMRS}} erhält die veganen Tagesgerichte vom Informationsportal und speichert diese.
+Somit wird die Bewertung der Gerichte zu einem späteren Zeitpunkt ermöglicht.
+Erstellte Bewertungen können zusätzlich wiederkehrenden Tagesgerichten zugeordnet und bereitgestellt werden. 
+
+Für den Bewertungsprozess bietet unsere Software-Lösung ein parallel-betriebenes System mit einer eigenen Oberfläche.
+Somit müssen nur sehr wenig (sonst teure) Anpassungen am bereits vorhandenen Informationsportal getätigt werden. 
+
+Die Käufer-Verifizierung erfolgt ebenfalls unabhängig vom Informationsportals des Auftraggebers über einen Scan der Restaurant-Rechnung.
+Somit wird der Kauf verifiziert, ohne dass teure Anpassungen bei den Restaurants (z. B. ein Kassen-Plugin) nötig sind.
+
+\subsection*{Voraussetzungen an das Informationsportal}
+
+Das System des Auftraggebers muss eine Schnittstelle bereitstellen, worüber die Daten zu den aktuellen Tagesgerichten abgerufen werden können.
+Ein Gericht wird eindeutig durch einen Namen, ein Restaurant und einen Rechnungsbezeichner identifiziert.
+Der Rechnungsbezeichner wird von den Restaurants definiert und ist identisch zu dem jeweiligen Bezeichner auf dem gedruckten Kassenbeleg.
+Außerdem müssen die veganen Speisen als solche eindeutig gekennzeichnet sein.
+
+Um einen Bewertungsprozess zu starten, muss das Informationsportal eine Verknüpfung bzw. einen Verweis an das \textit{\ac{aMRS}} ermöglichen.
+
+Teilnehmende Restaurants müssen Rechnungen nach der aktuellen deutschen Gesetzeslage ausstellen.
+
+\subsection*{Kosten}
+
+% Teamgröße: 8 Personen
+% Stundensatz: 180 €
+% Tage: 168 Manntage
+% Stunden pro Tag: 8 h
+% Gesamt: 241.920 €
+
+Für die Entwicklung der ersten Version von \textit{\ac{aMRS}} werden in unserem 8-köpfigen Team 21 Arbeitstage benötigt. 
+Der Stundensatz wird hierbei auf 180~€ festgelegt.
+Bei einem Arbeitstag mit 8 Arbeitsstunden ergibt dies eine Gesamtsumme von 241.920~€ (inkl. Steuern).
+
+
