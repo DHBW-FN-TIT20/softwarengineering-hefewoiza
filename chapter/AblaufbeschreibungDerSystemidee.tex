@@ -1,0 +1,15 @@
+\section{Ablaufbeschreibung der Systemidee}
+% periodisch vom Informationsportal
+% Dabei Prüfung auf (konfigurierbarer Filter) Vegan (Tag) und Abgleich eigene Datenbank -> nur neue Items
+% DATEN: Name, Restaurant-Name, Restaurant-Adresse, Rechnungsbezeichner (identisch zu Name auf Rechnung), Tags (vegan)
+Für die Betreibung von \ac{aMRS} werden die folgenden Daten Periodisch (z.B.: jede fünf Minuten) vom Informationsportal abgerufen und in \ac{aMRS} gespeichert:
+Die zur eindeutigen Identifikation der Tagesgerichte benötigten Attribute Restaurantname, Restaurantadresse und Rechnungsbezeichner, sowie die Attribute Gerichtname und Klassifikationen (z.B.: Vegan).
+Die bezogenen Daten werden in jeder Periode zunächst auf ausgewählte Klassifikationen (z.B.: Vegan) gefiltert und anschließend mit den bestehenden Daten in \ac{aMRS} verglichen, sodass das System ausschließlich um neue Datensätze erweitert wird.
+Bei der Konfiguration von \ac{aMRS} können die zu filternden Klassifikationen konfiguriert werden, wodurch die durch den Auftraggeber geforderte Spezifizierung auf Vegane Gerichte ermöglicht wird.
+
+% Übertragung der Daten / Bereitstellungsformat ist durch den Auftraggeber spezifizierbar, bzw. beliebig austauschbar
+% -> Unser System kann die Daten über jedes Format entgegennehmen
+Die Modularität von \ac{aMRS} ermöglicht einen Technologie unabhängigen Datenaustausch zwischen dem Informationsportal und \ac{aMRS}, wodurch die Bereitstellung der Daten durch das Informationsportal flexibel gestaltet ist.
+
+% Ablauf Bewertungsprozess
+Durch das Hochladen der Restaurantrechnung auf der von \ac{aMRS} bereitgestellten Benutzeroberfläche wird der Bewertungsprozess eingeleitet.
