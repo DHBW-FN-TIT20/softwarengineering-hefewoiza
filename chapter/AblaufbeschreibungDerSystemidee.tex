@@ -2,15 +2,15 @@
 % periodisch vom Informationsportal
 % Dabei Prüfung auf (konfigurierbarer Filter) Vegan (Tag) und Abgleich eigene Datenbank -> nur neue Items
 % DATEN: Name, Restaurant-Name, Restaurant-Adresse, Rechnungsbezeichner (identisch zu Name auf Rechnung), Tags (vegan)
-Für die Betreibung von \ac{aMRS} werden die folgenden Daten Periodisch (z.B.: jede fünf Minuten) vom Informationsportal abgerufen und in \ac{aMRS} persistent gespeichert:
+Für die Betreibung von \ac{aMRS} werden die folgenden Daten Periodisch (z.B.: jede fünf Minuten) vom Informationsportal abgerufen und in \ac{aMRS} persistent gespeichert.
 Die zur eindeutigen Identifikation der Tagesgerichte benötigten Attribute Restaurantname, Restaurantadresse und Rechnungsbezeichner, sowie die Attribute Gerichtname und Klassifikationen (z.B.: Vegan).
 Die bezogenen Daten werden in jeder Periode zunächst auf ausgewählte Klassifikationen (z.B.: Vegan) gefiltert und anschließend mit den bestehenden Daten in \ac{aMRS} verglichen, sodass das System ausschließlich um neue Datensätze erweitert wird.
 Bei der Konfiguration von \ac{aMRS} können die zu filternden Klassifikationen konfiguriert werden, wodurch die durch den Auftraggeber geforderte Spezifizierung auf Vegane Gerichte ermöglicht wird.
-
+\newparagraph
 % Übertragung der Daten / Bereitstellungsformat ist durch den Auftraggeber spezifizierbar, bzw. beliebig austauschbar
 % -> Unser System kann die Daten über jedes Format entgegennehmen
 Die Modularität von \ac{aMRS} ermöglicht einen Technologie unabhängigen Datenaustausch zwischen dem Informationsportal und \ac{aMRS}, wodurch die Bereitstellung der Daten durch das Informationsportal flexibel gestaltet ist.
-
+\newparagraph
 % Ablauf Bewertungsprozess
 Um den Bewertungsprozess auf der von \ac{aMRS} bereitgestellten Benutzeroberfläche zu starten, muss der Bewerter die Restaurantrechnung als Bild bereitstellen.
 % TODO: evtl. umformulieren: Bewerter muss das Bild scannen (bereitstellen eventuell mit zu komplexem Ablauf assoziiert)
@@ -18,15 +18,14 @@ Um den Bewertungsprozess auf der von \ac{aMRS} bereitgestellten Benutzeroberflä
 Dieses wird anschließend an ein externes System übergeben, welches den Inhalt der Restaurantrechnung zurück liefert.
 Die erhaltenen Daten sind dabei bereits in die folgenden Attribute untergliedert: Alle Rechnungsbezeichner die auf der Rechnung aufgelistet sind, den Restaurantnamen, die Restaurantadresse und die Rechnungsnummer.
 Ausgehend von den erhaltenen Daten gleicht \ac{aMRS} die enthaltenen Gerichte mit den im System gespeicherten Daten ab.
-Dabei werden die Gerichte, welche bereits mit der Rechnungsnummer bewertet wurden ebenfalls durch \ac{aMRS} identifiziert.
+Dabei werden die Gerichte, welche bereits mit der Rechnungsnummer bewertet wurden, ebenfalls durch \ac{aMRS} identifiziert.
 Somit kann \ac{aMRS} ermitteln, welche Gerichte für den Bewerter zur Bewertung freigegeben werden.
 \ac{aMRS} leitet diese Information an die Benutzeroberfläche weiter, wodurch die Eingabe der Bewertung startet.
-
+\newparagraph
 Durch das Absenden der Bewertung auf der Benutzeroberfläche wird die Bewertung zunächst durch \ac{aMRS} auf dessen Inhalt überprüft.
 % TODO: Inhaltsprüfung aktuell eigenes System -> eventuell extern
 Entspricht die erfasste Bewertung den festgelegten Kriterien, wird diese in \ac{aMRS} persistent gespeichert.
-
-
-Über eine weitere Schnittstelle kann das Informationsportal die Bewertungen zu den Gerichten abrufen.
+\newparagraph
+Über eine separate Schnittstelle kann das Informationsportal die Bewertungen zu den Gerichten abrufen.
 % TODO: Woraus besteht eine Bewertung? -> Nur Text? Text + Sterne? Sterne für verschiedene Kategorien?
 Die durch \ac{aMRS} bereitgestellten Daten enthalten dabei die Attribute Restaurantname, Restaurantadresse, Rechnungsbezeichner und die Bewertung.
