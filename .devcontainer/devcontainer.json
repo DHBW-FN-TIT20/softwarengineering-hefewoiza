@@ -1,0 +1,53 @@
+{
+    "name": "t2000",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "vscode",
+    "runServices": [
+        "vscode"
+    ],
+    "shutdownAction": "stopCompose",
+    "workspaceFolder": "/workspace",
+    "postCreateCommand": "",
+    "extensions": [
+        // Latex
+        "james-yu.latex-workshop",
+        "valentjn.vscode-ltex",
+        "torn4dom4n.latex-support",
+        "yzhang.markdown-all-in-one",
+        // path-intellisense
+        "christian-kohler.path-intellisense",
+        // Other helpers
+        "shardulm94.trailing-spaces",
+        "stkb.rewrap", // rewrap comments after n characters on one line
+        "Gruntfuggly.todo-tree" // Highlight #TODO and some more
+    ],
+    "settings": {
+        // General settings
+        "files.eol": "\n",
+        // Latex settings
+        "latex-workshop.bibtex-format.tab": "4 spaces",
+        "latex-workshop.bibtex-format.trailingComma": true,
+        "latex-workshop.chktex.enabled": true,
+        "latex-workshop.latex.clean.subfolder.enabled": true,
+        "latex-workshop.latex.autoBuild.run": "onSave",
+        "editor.formatOnSave": true,
+        "files.associations": {
+            "*.tex": "latex"
+        },
+        "latex-workshop.latexindent.path": "latexindent",
+        "latex-workshop.latexindent.args": [
+            "-c",
+            "%DIR%/",
+            "%TMPFILE%",
+            "-y=defaultIndent: '%INDENT%'"
+        ],
+        // Latex Language support
+        "ltex.additionalRules.motherTongue": "de-DE",
+        "ltex.language": "de-DE",
+        // Einheitliche Länge vom Text
+        "rewrap.wrappingColumn": 120,
+        "rewrap.autoWrap.enabled": true
+    }
+}
