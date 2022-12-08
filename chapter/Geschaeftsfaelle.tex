@@ -1,0 +1,155 @@
+\section{Geschäftsfälle}\label{sec:Geschaeftsfaelle}
+
+% - Vegane Tagesgerichte abrufen
+% - Bewertungen von Tagesgerichten bereitstellen
+% - Bewertungsprozess durchführen
+% - Bewertender Benutzer als authentisch identifizieren
+% - Rechnung analysieren
+% - Bewertung auf Inhalt (Scam-/Spam) prüfen
+% - Bewertung ablegen
+
+\begin{table}[H]
+    \centering
+    \label{veganetagesgerichteabrufen}
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        Name               & Vegane Tagesgerichte abrufen                                                                                                                  \\
+        \hline
+        Anwendungsfall-Typ & Geschäftsfall                                                                                                                                 \\
+        \hline
+        Kurzbeschreibung   & Alle bewertbaren Tagesgerichte werden vom Informationsportal abgerufen und verarbeitet. Nur diese sind anschließend für den Kunden bewertbar. \\
+        \hline
+        Auslöser           & Periodisch                                                                                                                                    \\
+        \hline
+        Ergebnis           & Alle benötigten Daten für die Bewertung der Tagesgerichte sind im aMRS gespeichert.                                                           \\
+        \hline
+        Akteure            & Informationsportal, \ac{aMRS}                                                                                                                 \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \label{bewertungenbereitstellen}
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        Name               & Bewertungen von Tagesgerichten bereitstellen                                                                                                  \\
+        \hline
+        Anwendungsfall-Typ & Geschäftsfall                                                                                                                                 \\
+        \hline
+        Kurzbeschreibung   & Bewertungen können von dem Infoportal abgerufen werden. Diese werden entsprechend von der Bewertungs-Datenbank ausgelesen und weitergeleitet. \\
+        \hline
+        Auslöser           & Bewertungsrequest                                                                                                                             \\
+        \hline
+        Ergebnis           & Eine oder mehrere Bewertungen werden zu dem Infoportal zurückgeschickt.                                                                       \\
+        \hline
+        Akteure            & Infoportal, \ac{aMRS}                                                                                                                         \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \label{bewertungsprozessDurchfuehren}
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        Name               & Bewertungsprozess durchführen                                                                                                                                                                                                                                                                                                                                                                                                                       \\
+        \hline
+        Anwendungsfall-Typ & Geschäftsfall                                                                                                                                                                                                                                                                                                                                                                                                                                       \\
+        \hline
+        Kurzbeschreibung   & Ein Bewertungsprozess zur Bewertung veganer Tagesgerichte wird gestartet. Zur Sicherstellung der Authentizität der Bewertung werden die Benutzer als solche authentisch identifiziert. War diese Überprüfung erfolgreich, bekommt der Benutzer die Möglichkeit Bewertungen für vegane Tagesgerichte, für welche er authentifiziert ist, zu erstellen. Der Inhalt der Bewertung wird anschließend geprüft. Abschließend wird die Bewertung abgelegt. \\
+        \hline
+        Auslöser           & Benutzer will eine Bewertung verfassen                                                                                                                                                                                                                                                                                                                                                                                                              \\
+        \hline
+        Ergebnis           & Eine authentische Bewertung eines veganen Tagesgerichts wurde verfasst                                                                                                                                                                                                                                                                                                                                                                              \\
+        \hline
+        Akteure            & Benutzer, \ac{aMRS}                                                                                                                                                                                                                                                                                                                                                                                                                                 \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+
+
+\begin{table}[H]
+    \centering
+    \label{}
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        Name               & Bewertenden Benutzer als authentisch identifizieren                                                                                                                                                                              \\
+        \hline
+        Anwendungsfall-Typ & Geschäftsfall                                                                                                                                                                                                                    \\
+        \hline
+        Kurzbeschreibung   & Der Benutzer wird dazu aufgefordert ein Foto seiner Restaurant-Rechnung zu machen und dieses hochzuladen. Anschließend startet die Analyse der Rechnung. Die Analysedaten werden zur Überprüfung der Authentizität herangezogen. \\
+        \hline
+        Auslöser           & Bewertungsprozess gestartet                                                                                                                                                                                                      \\
+        \hline
+        Ergebnis           & Benutzer ist als authentisch identifiziert                                                                                                                                                                                       \\
+        \hline
+        Akteure            & Benutzer, \ac{aMRS}                                                                                                                                                                                                              \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \label{}
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        Name               & Restaurant-Rechnung analysieren                                                                                                                                                       \\
+        \hline
+        Anwendungsfall-Typ & Geschäftsfall                                                                                                                                                                         \\
+        \hline
+        Kurzbeschreibung   & Die Restaurant-Rechnung wird auf das Vorhandensein aller Pflichtfelder überprüft. Die Analysedaten werden in ein Format gebracht, welches zur Weiterverarbeitung genutzt werden kann. \\
+        \hline
+        Auslöser           & Restaurant-Rechnung hochgeladen                                                                                                                                                       \\
+        \hline
+        Ergebnis           & Restaurant-Rechnung ist valide und Daten stehen zur Verfügung                                                                                                                         \\
+        \hline
+        Akteure            & \ac{aMRS}, OCR-System                                                                                                                                                                 \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \label{bewertungPruefen}
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        Name               & Bewertung auf Inhalt prüfen                                                                                                   \\
+        \hline
+        Anwendungsfall-Typ & Geschäftsfall                                                                                                                 \\
+        \hline
+        Kurzbeschreibung   & Bevor eine Bewertung in \ac{aMRS} gesichert wird, wird die Bewertung auf Spam, Scam und politisch korrekten Inhalt überprüft. \\
+        \hline
+        Auslöser           & Erhalten einer neuen Bewertung                                                                                                \\
+        \hline
+        Ergebnis           & Die Bewertung darf gesichert und angezeigt werden.                                                                            \\
+        \hline
+        Akteure            & \ac{aMRS}                                                                                                                     \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \label{bewertungablegen}
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        Name               & Bewertung ablegen                                                                   \\
+        \hline
+        Anwendungsfall-Typ & Geschäftsfall                                                                       \\
+        \hline
+        Kurzbeschreibung   & Falls eine valide Bewertung eintrifft, wird diese in einer Datenbank abgespeichert. \\
+        \hline
+        Auslöser           & Eintreffende Bewertung                                                              \\
+        \hline
+        Ergebnis           & Die Bewertung wird in der Datenbank abgelegt                                        \\
+        \hline
+        Akteure            & Informationsportal, \ac{aMRS}                                                       \\
+        \hline
+    \end{tabularx}
+\end{table}
+
