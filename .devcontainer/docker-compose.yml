@@ -9,14 +9,14 @@ services:
       # Docker socket to access Docker server
       - /var/run/docker.sock:/var/run/docker.sock
       # SSH directory
-      - ~/.ssh:/root/.ssh
+      # - ~/.ssh:/root/.ssh
       # For Windows without WSL, a copy will be made
       # from /tmp/.ssh to ~/.ssh to fix permissions
       # - ~/.ssh:/tmp/.ssh:ro
       # Shell history persistence
-      - ~/.zsh_history:/root/.zsh_history:z
+      # - ~/.zsh_history:/root/.zsh_history:z
       # Git config
-      - ~/.gitconfig:/root/.gitconfig
+      # - ~/.gitconfig:/root/.gitconfig
     environment:
       - TZ=Europe/Berlin
     entrypoint: ["zsh", "-c", "while sleep 1000; do :; done"]
