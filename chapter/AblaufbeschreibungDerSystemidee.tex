@@ -16,7 +16,13 @@ Um den Bewertungsprozess auf der von \ac{aMRS} bereitgestellten Benutzeroberflä
 % TODO: evtl. umformulieren: Bewerter muss das Bild scannen (bereitstellen eventuell mit zu komplexem Ablauf assoziiert)
 % TODO: Welche Form liefert das externe System zurück? -> Annahme: wir bekommen das fertige Objekt zurück, ergo wir haben einen Rechnungsscanner
 Dieses wird anschließend an ein externes System übergeben, welches den Inhalt der Restaurantrechnung zurück liefert.
-Die erhaltenen Daten sind dabei bereits in die folgenden Attribute untergliedert: Alle Rechnungsbezeichner die auf der Rechnung aufgelistet sind, den Restaurantnamen, die Restaurantadresse und die Rechnungsnummer.
+Die erhaltenen Daten sind dabei bereits in die folgenden Attribute untergliedert: 
+\begin{itemize}
+  \item Alle Rechnungsbezeichner die auf der Rechnung aufgelistet sind
+  \item Restaurantname
+  \item Restaurantadresse
+  \item Rechnungsnummer
+\end{itemize}
 Ausgehend von den erhaltenen Daten gleicht \ac{aMRS} die enthaltenen Gerichte mit den im System gespeicherten Daten ab.
 Dabei werden die Gerichte, welche bereits mit der Rechnungsnummer bewertet wurden, ebenfalls durch \ac{aMRS} identifiziert.
 Somit kann \ac{aMRS} ermitteln, welche Gerichte für den Bewerter zur Bewertung freigegeben werden.
