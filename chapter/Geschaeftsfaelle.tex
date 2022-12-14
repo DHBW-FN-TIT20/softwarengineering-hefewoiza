@@ -38,9 +38,9 @@
         \hline
         Anwendungsfall-Typ & Geschäftsfall                                                                                                                                 \\
         \hline
-        Kurzbeschreibung   & Bewertungen können von dem Infoportal abgerufen werden. Diese werden entsprechend von der Bewertungs-Datenbank ausgelesen und weitergeleitet. \\
+        Kurzbeschreibung   & Bewertungen können von dem Infoportal abgerufen werden. Diese werden entsprechend ausgelesen und bereitgestellt. \\
         \hline
-        Auslöser           & Bewertungsrequest                                                                                                                             \\
+        Auslöser           & Das Informationsportal möchte eine Bewertung zu einem Tagesgericht                                                                                                                             \\
         \hline
         Ergebnis           & Eine oder mehrere Bewertungen werden zu dem Infoportal zurückgeschickt.                                                                       \\
         \hline
@@ -58,7 +58,7 @@
         \hline
         Anwendungsfall-Typ & Geschäftsfall                                                                                                                                                                                                                                                                                                                                                                                                                                       \\
         \hline
-        Kurzbeschreibung   & Ein Bewertungsprozess zur Bewertung veganer Tagesgerichte wird gestartet. Zur Sicherstellung der Authentizität der Bewertung werden die Benutzer als solche authentisch identifiziert. War diese Überprüfung erfolgreich, bekommt der Benutzer die Möglichkeit Bewertungen für vegane Tagesgerichte, für welche er authentifiziert ist, zu erstellen. Der Inhalt der Bewertung wird anschließend geprüft. Abschließend wird die Bewertung abgelegt. \\
+        Kurzbeschreibung   & Ein Bewertungsprozess zur Bewertung von Tagesgerichten wird gestartet. Zur Sicherstellung der Authentizität der Bewertung müssen die Benutzer die Restaurantrechnung als Bild bereitstellen. Dieses wird anschließend von einem externen OCR-System analysiert. Die erhaltenen Daten werden mit den gespeicherten Daten abgeglichen. War diese Überprüfung erfolgreich, bekommt der Benutzer die Möglichkeit Bewertungen für die Tagesgerichte, welche auf der Rechnung aufgelistet sind, zu erstellen. Der Inhalt der Bewertung wird anschließend geprüft. Abschließend wird die Bewertung persistent gespeichert. \\
         \hline
         Auslöser           & Benutzer will eine Bewertung verfassen                                                                                                                                                                                                                                                                                                                                                                                                              \\
         \hline
@@ -121,7 +121,7 @@
         \hline
         Anwendungsfall-Typ & Geschäftsfall                                                                                                                 \\
         \hline
-        Kurzbeschreibung   & Bevor eine Bewertung in \ac{aMRS} gesichert wird, wird die Bewertung auf Spam, Scam und politisch korrekten Inhalt überprüft. \\
+        Kurzbeschreibung   & Bevor eine Bewertung in \ac{aMRS} gesichert wird, wird die Bewertung auf zum Beispiel Spam, Scam und politisch korrekten Inhalt überprüft. \\
         \hline
         Auslöser           & Erhalten einer neuen Bewertung                                                                                                \\
         \hline
@@ -142,11 +142,11 @@
         \hline
         Anwendungsfall-Typ & Geschäftsfall                                                                       \\
         \hline
-        Kurzbeschreibung   & Falls eine valide Bewertung eintrifft, wird diese in einer Datenbank abgespeichert. \\
+        Kurzbeschreibung   & Falls eine valide Bewertung eintrifft, wird diese persistent abgespeichert. \\
         \hline
         Auslöser           & Eintreffende Bewertung                                                              \\
         \hline
-        Ergebnis           & Die Bewertung wird in der Datenbank abgelegt                                        \\
+        Ergebnis           & Die Bewertung wird persistent gespeichert                                        \\
         \hline
         Akteure            & \ac{aMRS}                                                       \\
         \hline
