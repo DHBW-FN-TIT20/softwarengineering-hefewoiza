@@ -150,42 +150,44 @@
 \begin{document}
 
 
-  %%%%%%%%%%%%%%%%%%% Einführung und Verzeichnisse %%%%%%%%%%%%%%%%%%%
-  \pagenumbering{Roman}
+%%%%%%%%%%%%%%%%%%% Einführung und Verzeichnisse %%%%%%%%%%%%%%%%%%%
+\pagenumbering{Roman}
 
-  \include{pages/titel}
-  % \include{pages/sperrvermerk}
-  \include{pages/gendererklaerung}
-  \include{pages/selbststaendigkeitserklaerung}
-  %\include{pages/abstract}
-  \include{pages/inhaltsverzeichnis}
-  \include{pages/abkuerzungsverzeichnis}
-  \include{pages/abbildungsverzeichnis}
-  \include{pages/tabellenverzeichnis}
-  \include{pages/listingsverzeichnis}
-  % \include{pages/vorwort}
-
-
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Kapitel %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \pagestyle{fancy}
-  \fancyhead[L]{\nouppercase{\rightmark}}    % Abschnittsname im Header
-  \pagenumbering{arabic}
-
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %%%%                   EIGENE KAPITEL EINFÜGEN                  %%%%
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \include{chapter/Systemidee}
-  \include{chapter/AblaufbeschreibungDerSystemidee}
-
-  %%%%%%%%%%%%%%%%%%%%%%% Literaturverzeichnis %%%%%%%%%%%%%%%%%%%%%%%
-  \include{pages/literaturverzeichnis}
+\include{pages/titel}
+% \include{pages/sperrvermerk}
+\include{pages/gendererklaerung}
+\include{pages/selbststaendigkeitserklaerung}
+%\include{pages/abstract}
+\include{pages/inhaltsverzeichnis}
+\include{pages/abkuerzungsverzeichnis}
+\include{pages/abbildungsverzeichnis}
+\include{pages/tabellenverzeichnis}
+\include{pages/listingsverzeichnis}
+\include{chapter/Glossar}
+% \include{pages/vorwort}
 
 
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anhang %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \renewcommand{\thetable}{\Alph{section}.\arabic{table}}
-  \renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
-  \renewcommand{\thelstlisting}{\Alph{section}.\arabic{lstlisting}}
-  \pagenumbering{Alph}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Kapitel %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+\fancyhead[L]{\nouppercase{\rightmark}}    % Abschnittsname im Header
+\pagenumbering{arabic}
 
-  \include{pages/anhang}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%                   EIGENE KAPITEL EINFÜGEN                  %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{chapter/Systemidee}
+\include{chapter/AblaufbeschreibungDerSystemidee}
+\include{chapter/Geschaeftsfaelle}
+
+%%%%%%%%%%%%%%%%%%%%%%% Literaturverzeichnis %%%%%%%%%%%%%%%%%%%%%%%
+\include{pages/literaturverzeichnis}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anhang %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\thetable}{\Alph{section}.\arabic{table}}
+\renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
+\renewcommand{\thelstlisting}{\Alph{section}.\arabic{lstlisting}}
+\pagenumbering{Alph}
+
+\include{pages/anhang}
 \end{document}
