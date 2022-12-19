@@ -45,14 +45,15 @@ Außerdem ist eine \textbf{Modularität der Technologien} von Relevanz, um die m
 Dadurch wird der Anpassungsbedarf bei Austausch einer Technologie minimiert.
 
 \subsection{Anwendung der Ausschlusskriterien}
-In diesem Abschnitt wird mithilfe der vorhin definierten Ausschlusskriterien eine mögliche Technologie für die Realisierung von aMRS ausgewählt. Hierzu werden die folgenden Aspekte betrachtet.
+In diesem Abschnitt wird mithilfe der vorhin definierten Ausschlusskriterien eine mögliche Technologie für die Realisierung von \ac{aMRS} ausgewählt. Hierzu werden die folgenden Aspekte betrachtet.
 \begin{itemize}
   \item Art der Applikation
   \item Hardware
   \item Betriebssystem
   \item Programmiersprache
   \item Framework/Bibliothek
-\end{itemize}
+\end{itemize}\noindent
+Nicht auf alle Aspekte können alle Ausschlusskriterien angewandt werden, weshalb lediglich die anwendbaren Kriterien verwendet werden.
 % Die Ausschlusskriterien werden auf die Themen
 %  - Art der Applikation
 %  - Hardware
@@ -61,12 +62,18 @@ In diesem Abschnitt wird mithilfe der vorhin definierten Ausschlusskriterien ein
 %  - Framework/Bibliotheken
 % angewendet. 
 % Hierbei wird nur zu den jeweiligen anwendbaren Kriterien Stellung bezogen.
-
+\subsubsection*{Art der Applikation}
+Softwareprojekte starten oft mit der grundsätzlichen Frage Web-, Mobile- oder Desktop-Applikation. Die Entscheidung fällt hierbei auf eine Web-Applikation, da diese die höchste End-User-Kompatibilität bietet, weil sie auf allen Geräten, die über einen Browser verfügen, genutzt werden kann und nicht installiert werden muss.
+Sie bietet ebenfalls den Vorteil der Cross-Plattform-Kompatibilität.
+Außerdem sind bei den Entwicklern umfangreiche Kenntnisse im Bereich der Webentwicklung vorhanden weshalb eine Web-Applikation zusätzlich kostengünstiger ist. 
+Deshalb werden im weiteren Vorgehen nur Ansätze mit Web-Applikation verfolgt.
 % Wenn es um die Entscheidung geht, ob eine Web-, Mobile- oder Desktop-Applikation entwickelt werden soll, ist die Entscheidung klar: Eine Web-Applikation ist die bessere Wahl, da sie auf allen Geräten, die über einen Browser verfügen, genutzt werden kann und nicht installiert werden muss. Außerdem ist die Entwicklung einer Web-Applikation kostengünstiger, da die Entwickler bereits Erfahrung mit der Entwicklung von Web-Applikationen haben.
-
+\subsubsection*{Hardware}
+Die Auswirkungen von Hardware auf die Qualität und Leistungsfähigkeit der Anwendung ist nicht signifikant, weswegen lediglich die weite Verbreitung als Kriterium anzuführen ist.
+Sowohl x86-Prozessoren als auch ARM Prozessoren gelten als weit verbreitet. Diese sollen eine mögliche Auswahl für die darauffolgenden Entscheidungen bilden.
 % Hardware: 
 % - Hohe Skalierbarkeit und Leistungsfähigkeit: ARM- oder x86-Architektur
-
+\subsubsection*{Betriebssystem}
 % Betriebssystem:
 % - Weite Verbreitung: Linux
 % - Skalierbarkeit: Linux (Kosten)
