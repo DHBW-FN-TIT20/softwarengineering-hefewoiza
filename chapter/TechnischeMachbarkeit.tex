@@ -1,26 +1,160 @@
 \section{Technische Machbarkeit}
-Die technische Machbarkeit ist ein wichtiger Aspekt bei der Entwicklung eines Software-Systems, da sie darüber entscheidet, ob das System überhaupt entwickelt werden kann und welche Technologien dafür verwendet werden müssen. Daher ist es wichtig, die technische Machbarkeit frühzeitig im Entwicklungsprozess zu untersuchen, um sicherzustellen, dass das System erfolgreich entwickelt werden kann.
+
+Die technische Machbarkeit ist ein wichtiger Aspekt bei der Entwicklung eines Software-Systems, da sie darüber entscheidet, ob das System überhaupt entwickelt werden kann und welche Technologien dafür verwendet werden müssen. 
+Daher ist es wichtig, die technische Machbarkeit frühzeitig im Entwicklungsprozess zu untersuchen, um sicherzustellen, dass das System erfolgreich entwickelt werden kann.
 Die Analyse der technischen Machbarkeit erfolgt unter der Beachtung der fünf wesentlichen Einflussfaktoren für die Auswahl von Technologien: Entwickler/Zulieferer, Unternehmen, Markt, Zeit und Gesetze.
-\newparagraph
+
 Aus diesen Einflussfaktoren werden im folgenden Kapitel spezielle Ausschlusskriterien für Technologien abgeleitet.
-Abnschließend wird eine Technologie anhand der Kriterien und den in den vorherigen Kapiteln konzeptionierten Komponenten und Abläufen empfohlen, mit der die Anforderungen des Auftraggebers umgesetzt werden können.
+Anschließend wird eine Technologie anhand der Kriterien und den in den vorherigen Kapiteln konzeptionierten Komponenten und Abläufen empfohlen, mit der die Anforderungen des Auftraggebers umgesetzt werden können.
 
 \subsection{Definition der Ausschlusskriterien}
-Es ist wichtig, dass die Technologien, die für das System verwendet werden, technologisch unabhängig sind. Das bedeutet, dass sie nicht von anderen Systemen abhängig sind und problemlos in jedes System integriert werden können. Die Unabhängigkeit wird vor allem deshalb vorausgesetzt, da das System des Auftraggebers völlig unbekannt ist und sich das neue System problemlos in die vorhandene Architektur einfügen können muss.
-\newparagraph
-Ein weiteres wichtiges Kriterium ist das Vorwissen der Entwickler. In diesem Fall verfügen die Entwickler der \vFKW bereits über umfangreiche Kenntnisse in den Webtechnologien React, TypeScript, JavaScript, Next.js und Node.js. Auch Kenntnisse in den Backend-Technologien C\#, Python, MariaDB, MySQL und PostgreSQL sowie in der Cloud-Technologie \ac{AWS} sind bereits ausgeprägt vorhanden. Da ein Erlernen neuer Fähigkeiten sehr zeitaufwändig und somit auch kostspielig sein kann, sollen die verwendeten Technologien auf den Kenntnissen des Entwicklerteams basieren und die bereits vorhandenen Fähigkeiten genutzt werden.
-\newparagraph
-Ein zusätzlicher wichtiger Faktor ist die weite Verbreitung der verwendeten Technologien. Je verbreiteter eine Technologie ist, desto einfacher ist es, für sie qualifiziertes Personal zu finden und Support zu erhalten. Außerdem besteht eine höhere Chance, dass die Technologie von mehreren anderen Unternehmen genutzt wird. Dadurch wird einer Abhängigkeit von einzelnen Marktteilnehmern entgegengewirkt.
-\newparagraph
-Eine hohe End-User-Kompatibilität ist ebenfalls wichtig, da jeder Kunde die Benutzeroberfläche einfach aufrufen können soll, ohne dass ein separates Setup auf seinem Endgerät erforderlich ist. Dies kann durch die Verwendung plattformunabhängiger Front-End-Technologien erreicht werden. Ein weiterer Vorteil einer plattformunabhängigen Entwicklung ist der Entwicklungsaufwand, der nur einmal durchgeführt werden muss, um ein für alle Plattformen ausgelegtes System zu schaffen und nicht für jede Plattform einzelne Entwicklungsaufwände betrieben werden müssen.
-\newparagraph
-Ein weiteres wichtiges Ausschlusskriterium für Technologien ist die Einhaltung gesetzlicher Grundlagen, insbesondere im Bereich Datenschutz. Dies ist besonders wichtig beim Scan von Rechnungen und anderen Dokumenten, die sensible persönliche Daten enthalten können. Es ist unerlässlich, dass jede verwendete Technologie die Anforderungen des Datenschutzgesetzes erfüllt und die Privatsphäre der Betroffenen schützt. Außerdem sind die gesetzlichen Grundlagen zu den Lizenzen verschiedener Technologien zu beachten, damit diese nicht verletzt werden und der FKW Software Solutions Group hierdurch kein Schaden entstehen kann.
-\newparagraph
-Ebenfalls wichtig bei der Auswahl einer Technologie ist ihre Skalierbarkeit. Durch die Skalierbarkeit wird festgelegt, wie gut sich die Technologie an ihre Umgebung anpasst, sodass beispielsweise bei einer stark ansteigenden Anzahl an Aufrufen weiterhin genug Leistung vorhanden ist, um die Anwendung ohne Einschränkungen betreiben zu können. Da keine Informationen zum Nutzungsverhalten im System des Auftraggebers vorliegen, muss das neue System an alle möglichen Nutzungsverhalten angepasst werden können, weswegen die Skalierbarkeit der Technologien ein wichtiger Punkt bei der Auswahl ist.
-\newparagraph
-Die gewählte Technologie muss sich durch einen hohen Reifegrad auszeichnen, damit die Wahrscheinlichkeit für grundsätzliche Änderungen während der Umsetzung reduziert wird, die durch mögliche Bugfixes in der zugrundeliegenden Technologie entstehen könnten.
-Zusätzlich muss die Technologie eine gewisse Zukunftssicherheit aufweisen, damit eine Langlebigkeit des Produkts gewährleistet werden kann. Somit wird präventiv gegen einen erneuten Entwicklungsaufwand nach kurzer Zeit vorgegangen.
-\newparagraph
-Außerdem ist eine Modularität der Technologien von Relevanz, um die maximale Unabhängigkeit und Austauschbarkeit der Technologien zu ermöglichen. Dadurch wird der Anpassungsbedarf bei Austausch einer Technologie minimiert.
+
+Es ist wichtig, dass die Technologien, die für das System verwendet werden, \textbf{technologisch unabhängig} sind. 
+Das bedeutet, dass sie nicht von anderen Systemen abhängig sind und problemlos in jedes System integriert werden können. 
+Die Unabhängigkeit wird vor allem deshalb vorausgesetzt, da das System des Auftraggebers völlig unbekannt ist und sich das neue System problemlos in die vorhandene Architektur einfügen können muss.
+% TODO: check if needed
+
+Ein weiteres wichtiges Kriterium ist das \textbf{Vorwissen der Entwickler}. 
+In diesem Fall verfügen die Entwickler der \vFKW bereits über umfangreiche Kenntnisse in den Webtechnologien React, TypeScript, JavaScript, Next.js, Flask und Django. 
+Auch Kenntnisse in den Backend-Technologien C\#, Python, MariaDB, MySQL und PostgreSQL, sowie in der Cloud-Technologie \ac{AWS} sind bereits ausgeprägt vorhanden. 
+Da ein Erlernen neuer Fähigkeiten sehr zeitaufwändig und somit auch kostspielig sein kann, sollen die verwendeten Technologien auf den Kenntnissen des Entwicklerteams basieren und die bereits vorhandenen Fähigkeiten genutzt werden.
+
+Ein zusätzlicher wichtiger Faktor ist die \textbf{weite Verbreitung} der verwendeten Technologien. 
+Je verbreiteter eine Technologie ist, desto einfacher ist es, für sie qualifiziertes Personal zu finden und Support zu erhalten. 
+Außerdem besteht eine höhere Chance, dass die Technologie von mehreren anderen Unternehmen genutzt wird. 
+Dadurch wird einer Abhängigkeit von einzelnen Marktteilnehmern entgegengewirkt.
+
+Eine \textbf{hohe End-User-Kompatibilität} ist ebenfalls wichtig, da jeder Kunde die Benutzeroberfläche einfach aufrufen können soll, ohne dass ein aufwendiges Setup auf seinem Endgerät erforderlich ist. 
+Dies kann durch die Verwendung plattformunabhängiger Front-End-Technologien erreicht werden. 
+Ein weiterer Vorteil einer plattformunabhängigen Entwicklung ist der Entwicklungsaufwand, der nur einmal durchgeführt werden muss, um ein für alle Plattformen ausgelegtes System zu schaffen und nicht für jede Plattform einzelne Entwicklungsaufwände betrieben werden müssen.
+
+Ein weiteres wichtiges Ausschlusskriterium für Technologien ist die \textbf{Einhaltung gesetzlicher Grundlagen}, insbesondere im Bereich Datenschutz. 
+Dies ist besonders wichtig beim Scan von Rechnungen und anderen Dokumenten, die sensible persönliche Daten enthalten können. 
+Es ist unerlässlich, dass jede verwendete Technologie die Anforderungen des Datenschutzgesetzes erfüllt und die Privatsphäre der Betroffenen schützt. 
+Außerdem sind die gesetzlichen Grundlagen zu den Lizenzen verschiedener Technologien zu beachten, damit diese nicht verletzt werden und der FKW Software Solutions Group hierdurch kein Schaden entstehen kann.
+
+Ebenfalls wichtig bei der Auswahl einer Technologie ist ihre \textbf{Skalierbarkeit}. 
+Durch die Skalierbarkeit wird festgelegt, wie gut sich die Technologie an ihre Umgebung anpasst, sodass beispielsweise bei einer stark ansteigenden Anzahl an Aufrufen weiterhin genug Leistung vorhanden ist, um die Anwendung ohne Einschränkungen betreiben zu können. 
+Da keine Informationen zum Nutzungsverhalten im System des Auftraggebers vorliegen, muss das neue System an alle möglichen Nutzungsverhalten angepasst werden können, weswegen die Skalierbarkeit der Technologien ein entscheidender Punkt bei der Auswahl ist.
+
+Die gewählte Technologie muss sich durch einen \textbf{hohen Reifegrad} auszeichnen, damit die Wahrscheinlichkeit für grundsätzliche Änderungen während der Umsetzung reduziert wird, die durch mögliche Bugfixes in der zugrundeliegenden Technologie entstehen könnten.
+Zusätzlich muss die Technologie eine gewisse Zukunftssicherheit aufweisen, damit eine Langlebigkeit des Produkts gewährleistet werden kann. 
+Somit wird präventiv gegen einen erneuten Entwicklungsaufwand nach kurzer Zeit vorgegangen.
+
+Außerdem ist eine \textbf{Modularität der Technologien} von Relevanz, um die maximale Unabhängigkeit und Austauschbarkeit der Technologien zu ermöglichen. 
+Dadurch wird der Anpassungsbedarf bei Austausch einer Technologie minimiert.
 
 \subsection{Anwendung der Ausschlusskriterien}
+
+% - Art der Applikation (Web, Desktop, Mobile) (Tabelle)
+%   - Kriterien:
+%     - Vorwissen der Entwickler
+%     - Weite Verbreitung
+%     - Erreichung hoher End-User-Kompatibilität
+%     - Hoher Reifegrad
+% - Hardware (Server) (Keine Tabelle)
+%   - Kriterien:
+%     - Skalierbarkeit
+% - Betriebssystem (Keine Tabelle)
+%   - Kriterien:
+%     - Weite Verbreitung
+%     - Skalierbarkeit
+%     - Technologische Unabhängigkeit
+% - Programmiersprache (Tabelle)
+%   - Kriterien:
+%     - Vorwissen der Entwickler
+%     - Weite Verbreitung
+%     - Möglichkeiten der Erreichung hoher End-User-Kompatibilität
+%     - Hoher Reifegrad
+% - Framework/Bibliotheken (Tabelle)
+%   - Kriterien:
+%     - Vorwissen der Entwickler
+%     - Weite Verbreitung
+%     - Erreichung hoher End-User-Kompatibilität
+%     - Hoher Reifegrad
+
+% Die Ausschlusskriterien werden auf die Themen
+%  - Art der Applikation
+%  - Hardware
+%  - Betriebsystem
+%  - Programmiersprache
+%  - Framework/Bibliotheken
+% angewendet. 
+% Hierbei wird nur zu den jeweiligen anwendbaren Kriterien Stellung bezogen.
+
+% Wenn es um die Entscheidung geht, ob eine Web-, Mobile- oder Desktop-Applikation entwickelt werden soll, ist die Entscheidung klar: Eine Web-Applikation ist die bessere Wahl, da sie auf allen Geräten, die über einen Browser verfügen, genutzt werden kann und nicht installiert werden muss. Außerdem ist die Entwicklung einer Web-Applikation kostengünstiger, da die Entwickler bereits Erfahrung mit der Entwicklung von Web-Applikationen haben.
+
+% Hardware: 
+% - Hohe Skalierbarkeit und Leistungsfähigkeit: ARM- oder x86-Architektur
+
+% Betriebssystem:
+% - Weite Verbreitung: Linux
+% - Skalierbarkeit: Linux (Kosten)
+% - Technologische Unabhängigkeit: Linux (MacOS und Windows sind proprietäre Betriebssysteme)
+% - Unsere Auswahl: Ubuntu Server 20.04 LTS weil zukunftssicher und stabil
+
+% Programmiersprache:
+
+% | | C# | Python | Javascript |
+% | --- | --- | --- | --- |
+% | Vorwissen der Entwickler | 3/8 | 8/8 | 7/8 |
+% | Weite Verbreitung | 3,173 % | 26,25 % | 9,02 % |
+% | Möglichkeiten der Web-Entwicklung (End-User-Kompatibilität) | Blazor | Django, Flask | Next.JS, Node.JS | 
+% | Hoher Reifegrad bzw. Zukunftsicherheit | End of Life .NET6: 2024 | End of Life Python 3.11: 2027 | ECMAScript wird jährlich geupdated |
+
+% Framework/Bibliotheken:
+
+% | | Blazor | Django | Next.JS | Node.JS |
+% | --- | --- | --- | --- | --- |
+% | Vorwissen der Entwickler | 1/8 | 6/8 | 5/8 | 5/8 |
+% | Erreichung hoher End-User-Kompatibilität | cross-platform (Web-Applikation) | cross-platform (Web-Applikation) | cross-platform (Web-Applikation) | cross-platform (Web-Applikation) |
+% | Hoher Reifegrad bzw. Zukunftsicherheit | End of Life .NET6: 2024 | End of Life Django 3.2: 2024 | unbekannt | End of Life Node.JS 18: 2025 |
+
+% Quellen:
+
+% programmiersprachen: https://madnight.github.io/githut/#/pushes/2022/3
+% dot net 6: https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core
+% python 3.11: https://endoflife.date/python
+% django 3.2: https://endoflife.date/django
+% node.js 18: https://endoflife.date/nodejs
+% ecmascript: https://www.w3schools.com/js/js_versions.asp
+
+\paragraph*{Art der Applikation}
+
+\paragraph*{Hardware}
+
+\paragraph*{Betriebssystem}
+
+\paragraph*{Programmiersprache}
+
+Die folgende Tabelle...\\
+
+\begin{tabular} {|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
+\hline
+ & C\# & Python & Javascript \\
+\hline
+Vorwissen der Entwickler & 3/8 & 8/8 & 7/8 \\
+\hline
+Weite Verbreitung & 3,173 \% & 26,25 \% & 9,02 \% \\
+\hline
+Möglichkeiten der Web-Entwicklung (End-User-Kompatibilität) & Blazor & Django, Flask & Next.JS, Node.JS \\
+\hline
+Hoher Reifegrad bzw. Zukunftsicherheit & End of Life .NET6: 2024 & End of Life Python 3.11: 2027 & ECMAScript wird jährlich geupdated \\
+\hline
+\end{tabular}
+
+\paragraph*{Framework/Bibliotheken}
+
+Die folgende Tabelle...\\
+
+\begin{tabular} {|m{3cm}|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
+\hline
+ & Blazor & Django & Next.JS & Node.JS \\
+\hline
+Vorwissen der Entwickler & 1/8 & 6/8 & 5/8 & 5/8 \\
+\hline
+Erreichung hoher End-User-Kompatibilität & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) \\
+\hline
+Hoher Reifegrad bzw. Zukunftsicherheit & End of Life .NET6: 2024 & End of Life Django 3.2: 2024 & unbekannt & End of Life Node.JS 18: 2025 \\
+\hline
+\end{tabular}
