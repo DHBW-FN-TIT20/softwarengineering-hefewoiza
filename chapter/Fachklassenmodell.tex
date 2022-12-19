@@ -8,8 +8,8 @@ Wartbarkeit, Erweiterbarkeit und die Qualität der Software sichergestellt werde
 \noindent Wie in \autoref{fig:Fachklassendiagramm} zu erkennen ist das System in zwei unabhängige Teilsysteme
 untergliedert, welche nur über die Datenspeicherung verbunden sind. Diese nutzt das Repository Pattern, um eine
 Entkopplung der Datenzugriffsschicht vom restlichen System zu ermöglichen. Über das Adapter Pattern ist eine
-Schnittstelle zwischen Informationsportal und \ac{aMRS} geplant. Zum andern bietet \ac{aMRS} mit ihrer eigenen GUI die
-Möglichkeit den im \#TODO autoref ... beschriebenen Bewertungsprozess durchzuführen. Dieser Prozess nutzt einen Adapter
+Schnittstelle zwischen \hyperref[gls:informationsportal]{Informationsportal} und \ac{aMRS} geplant. Zum andern bietet \ac{aMRS} mit ihrer eigenen GUI die
+Möglichkeit den im \autoref{cha:AblaufbeschreibungderSystemidee} beschriebenen Bewertungsprozess durchzuführen. Dieser Prozess nutzt einen Adapter
 zu einem externen OCR-System und diverse Validatoren, welche mithilfe des Iterator Pattern leicht an zukünftige
 Kundenwünsche angepasst werden können.
 
@@ -18,7 +18,7 @@ Kundenwünsche angepasst werden können.
 \begin{figure}[H]
     \centering
     \caption{Fachklassendiagramm} \label{fig:Fachklassendiagramm}
-    \includegraphics[width=1.3\textwidth,angle=90,keepaspectratio]{images/Fachklassenmodell}
+    \includegraphics[width=\textwidth,keepaspectratio]{images/Fachklassenmodell}
 \end{figure}
 
 \section*{Beschreibung der Fachklassen}
@@ -39,16 +39,16 @@ Die Klasse Rating enthält Informationen über das zu bewertende Dish, eine Wert
 
 \subsection*{Adapter}
 \noindent \textbf{aMRSAdapter}\\
-Die Klasse aMRSAdapter gitb dem Informationsportal die Möglichkeit Bewertungen vom \ac{aMRS} abzurufen.
+Die Klasse aMRSAdapter gitb dem \hyperref[gls:informationsportal]{Informationsportal} die Möglichkeit Bewertungen vom \ac{aMRS} abzurufen.
 \newline
 
 \noindent \textbf{InformationsPortalAdapter}\\
-Die Klasse InformationsPortalAdapter gitb dem \ac{aMRS} die Möglichkeit Tagesgerichte vom Informationsportal abzurufen.
+Die Klasse InformationsPortalAdapter gitb dem \ac{aMRS} die Möglichkeit Tagesgerichte vom \hyperref[gls:informationsportal]{Informationsportal} abzurufen.
 Dabei werden die Tagesgerichte nach Klassifikation gefiltert.
 \newline
 
-\noindent \textbf{OCR-BillValidator}\\
-Die Klasse OCR-BillValidator stellt die Kommunikation von \ac{aMRS} zum externen OCR-System her.
+\noindent \hyperref[gls:ocr-BillAnalyzer]{\textbf{OCR-BillAnalyzer}}\\
+Die Klasse \hyperref[gls:ocr-BillAnalyzer]{OCR-BillAnalyzer} stellt die Kommunikation von \ac{aMRS} zum externen OCR-System her.
 
 
 \subsection*{Boundary}

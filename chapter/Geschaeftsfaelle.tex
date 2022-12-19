@@ -34,17 +34,17 @@
     \label{bewertungenbereitstellen}
     \begin{tabularx}{\textwidth}{| l | X |}
         \hline
-        Name               & Bewertungen von Tagesgerichten bereitstellen                                                                                                  \\
+        Name               & Bewertungen von Tagesgerichten bereitstellen                                                                                                   \\
         \hline
-        Anwendungsfall-Typ & Geschäftsfall                                                                                                                                 \\
+        Anwendungsfall-Typ & Geschäftsfall                                                                                                                                  \\
         \hline
-        Kurzbeschreibung   & Bewertungen können von dem Infoportal abgerufen werden. Diese werden entsprechend ausgelesen und bereitgestellt. \\
+        Kurzbeschreibung   & Bewertungen zu einem Tagesgericht können von dem Informationsportal abgerufen werden. Diese werden entsprechend ausgelesen und bereitgestellt. \\
         \hline
-        Auslöser           & Das Informationsportal möchte eine Bewertung zu einem Tagesgericht                                                                                                                             \\
+        Auslöser           & Das Informationsportal möchte alle Bewertung zu einem Tagesgericht                                                                             \\
         \hline
-        Ergebnis           & Eine oder mehrere Bewertungen werden zu dem Infoportal zurückgeschickt.                                                                       \\
+        Ergebnis           & Eine oder mehrere Bewertungen werden zu dem Informationsportal zurückgeschickt.                                                                \\
         \hline
-        Akteure            & Infoportal, \ac{aMRS}                                                                                                                         \\
+        Akteure            & Informationsportal, \ac{aMRS}                                                                                                                  \\
         \hline
     \end{tabularx}
 \end{table}
@@ -54,17 +54,17 @@
     \label{bewertungsprozessDurchfuehren}
     \begin{tabularx}{\textwidth}{| l | X |}
         \hline
-        Name               & Bewertungsprozess durchführen                                                                                                                                                                                                                                                                                                                                                                                                                       \\
+        Name               & Bewertungsprozess durchführen                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       \\
         \hline
-        Anwendungsfall-Typ & Geschäftsfall                                                                                                                                                                                                                                                                                                                                                                                                                                       \\
+        Anwendungsfall-Typ & Geschäftsfall                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       \\
         \hline
         Kurzbeschreibung   & Ein Bewertungsprozess zur Bewertung von Tagesgerichten wird gestartet. Zur Sicherstellung der Authentizität der Bewertung müssen die Benutzer die Restaurantrechnung als Bild bereitstellen. Dieses wird anschließend von einem externen OCR-System analysiert. Die erhaltenen Daten werden mit den gespeicherten Daten abgeglichen. War diese Überprüfung erfolgreich, bekommt der Benutzer die Möglichkeit Bewertungen für die Tagesgerichte, welche auf der Rechnung aufgelistet sind, zu erstellen. Der Inhalt der Bewertung wird anschließend geprüft. Abschließend wird die Bewertung persistent gespeichert. \\
         \hline
-        Auslöser           & Benutzer will eine Bewertung verfassen                                                                                                                                                                                                                                                                                                                                                                                                              \\
+        Auslöser           & Benutzer will eine Bewertung verfassen                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              \\
         \hline
-        Ergebnis           & Eine authentische Bewertung eines veganen Tagesgerichts wurde verfasst                                                                                                                                                                                                                                                                                                                                                                              \\
+        Ergebnis           & Eine authentische Bewertung eines veganen Tagesgerichts wurde verfasst                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              \\
         \hline
-        Akteure            & Benutzer, \ac{aMRS}                                                                                                                                                                                                                                                                                                                                                                                                                                 \\
+        Akteure            & Benutzer, \ac{aMRS}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \\
         \hline
     \end{tabularx}
 \end{table}
@@ -76,17 +76,17 @@
     \label{}
     \begin{tabularx}{\textwidth}{| l | X |}
         \hline
-        Name               & Bewertenden Benutzer als authentisch identifizieren                                                                                                                                                                              \\
+        Name               & Bewertenden Benutzer als authentisch identifizieren                                                                                                                                                                             \\
         \hline
-        Anwendungsfall-Typ & Geschäftsfall                                                                                                                                                                                                                    \\
+        Anwendungsfall-Typ & Geschäftsfall                                                                                                                                                                                                                   \\
         \hline
         Kurzbeschreibung   & Der Benutzer wird dazu aufgefordert ein Foto seiner Restaurantrechnung zu machen und dieses hochzuladen. Anschließend startet die Analyse der Rechnung. Die Analysedaten werden zur Überprüfung der Authentizität herangezogen. \\
         \hline
-        Auslöser           & Bewertungsprozess gestartet                                                                                                                                                                                                      \\
+        Auslöser           & Bewertungsprozess gestartet                                                                                                                                                                                                     \\
         \hline
-        Ergebnis           & Benutzer ist als authentisch identifiziert                                                                                                                                                                                       \\
+        Ergebnis           & Benutzer ist als authentisch identifiziert                                                                                                                                                                                      \\
         \hline
-        Akteure            & Benutzer, \ac{aMRS}                                                                                                                                                                                                              \\
+        Akteure            & Benutzer, \ac{aMRS}                                                                                                                                                                                                             \\
         \hline
     \end{tabularx}
 \end{table}
@@ -98,7 +98,7 @@
         \hline
         Name               & Restaurantrechnung analysieren                                                                                                                                                       \\
         \hline
-        Anwendungsfall-Typ & Geschäftsfall                                                                                                                                                                         \\
+        Anwendungsfall-Typ & Geschäftsfall                                                                                                                                                                        \\
         \hline
         Kurzbeschreibung   & Die Restaurantrechnung wird auf das Vorhandensein aller Pflichtfelder überprüft. Die Analysedaten werden in ein Format gebracht, welches zur Weiterverarbeitung genutzt werden kann. \\
         \hline
@@ -106,7 +106,7 @@
         \hline
         Ergebnis           & Restaurantrechnung ist valide und Daten stehen zur Verfügung                                                                                                                         \\
         \hline
-        Akteure            & \ac{aMRS}, OCR-System                                                                                                                                                                 \\
+        Akteure            & \ac{aMRS}, OCR-System                                                                                                                                                                \\
         \hline
     \end{tabularx}
 \end{table}
@@ -117,17 +117,17 @@
     \label{bewertungPruefen}
     \begin{tabularx}{\textwidth}{| l | X |}
         \hline
-        Name               & Bewertung auf Inhalt prüfen                                                                                                   \\
+        Name               & Bewertung auf Inhalt prüfen                                                                                                                \\
         \hline
-        Anwendungsfall-Typ & Geschäftsfall                                                                                                                 \\
+        Anwendungsfall-Typ & Geschäftsfall                                                                                                                              \\
         \hline
         Kurzbeschreibung   & Bevor eine Bewertung in \ac{aMRS} gesichert wird, wird die Bewertung auf zum Beispiel Spam, Scam und politisch korrekten Inhalt überprüft. \\
         \hline
-        Auslöser           & Erhalten einer neuen Bewertung                                                                                                \\
+        Auslöser           & Erhalten einer neuen Bewertung                                                                                                             \\
         \hline
-        Ergebnis           & Die Bewertung darf gesichert und angezeigt werden.                                                                            \\
+        Ergebnis           & Die Bewertung darf gesichert und angezeigt werden.                                                                                         \\
         \hline
-        Akteure            & \ac{aMRS}                                                                                                                     \\
+        Akteure            & \ac{aMRS}                                                                                                                                  \\
         \hline
     \end{tabularx}
 \end{table}
@@ -138,17 +138,17 @@
     \label{bewertungablegen}
     \begin{tabularx}{\textwidth}{| l | X |}
         \hline
-        Name               & Bewertung ablegen                                                                   \\
+        Name               & Bewertung ablegen                                                           \\
         \hline
-        Anwendungsfall-Typ & Geschäftsfall                                                                       \\
+        Anwendungsfall-Typ & Geschäftsfall                                                               \\
         \hline
         Kurzbeschreibung   & Falls eine valide Bewertung eintrifft, wird diese persistent abgespeichert. \\
         \hline
-        Auslöser           & Eintreffende Bewertung                                                              \\
+        Auslöser           & Eintreffende Bewertung                                                      \\
         \hline
-        Ergebnis           & Die Bewertung wird persistent gespeichert                                        \\
+        Ergebnis           & Die Bewertung wird persistent gespeichert                                   \\
         \hline
-        Akteure            & \ac{aMRS}                                                       \\
+        Akteure            & \ac{aMRS}                                                                   \\
         \hline
     \end{tabularx}
 \end{table}

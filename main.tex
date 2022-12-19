@@ -152,8 +152,6 @@
 
 %%%%%%%%%%%%%%%%%%% Einführung und Verzeichnisse %%%%%%%%%%%%%%%%%%%
 \pagenumbering{Roman}
-%%%%%%%%%%%%%%%%%%% Einführung und Verzeichnisse %%%%%%%%%%%%%%%%%%%
-\pagenumbering{Roman}
 
 \include{pages/titel}
 % \include{pages/sperrvermerk}
@@ -173,10 +171,6 @@
 \pagestyle{fancy}
 \fancyhead[L]{\nouppercase{\rightmark}}    % Abschnittsname im Header
 \pagenumbering{arabic}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Kapitel %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\pagestyle{fancy}
-\fancyhead[L]{\nouppercase{\rightmark}}    % Abschnittsname im Header
-\pagenumbering{arabic}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                   EIGENE KAPITEL EINFÜGEN                  %%%%
@@ -188,8 +182,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%% Literaturverzeichnis %%%%%%%%%%%%%%%%%%%%%%%
 \include{pages/literaturverzeichnis}
-%%%%%%%%%%%%%%%%%%%%%%% Literaturverzeichnis %%%%%%%%%%%%%%%%%%%%%%%
-\include{pages/literaturverzeichnis}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anhang %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -197,12 +189,6 @@
 \renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
 \renewcommand{\thelstlisting}{\Alph{section}.\arabic{lstlisting}}
 \pagenumbering{Alph}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anhang %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\renewcommand{\thetable}{\Alph{section}.\arabic{table}}
-\renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
-\renewcommand{\thelstlisting}{\Alph{section}.\arabic{lstlisting}}
-\pagenumbering{Alph}
 
-\include{pages/anhang}
 \include{pages/anhang}
 \end{document}
