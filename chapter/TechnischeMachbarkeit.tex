@@ -70,16 +70,38 @@ Deshalb werden im weiteren Vorgehen nur Ansätze mit Web-Applikation verfolgt.
 % Wenn es um die Entscheidung geht, ob eine Web-, Mobile- oder Desktop-Applikation entwickelt werden soll, ist die Entscheidung klar: Eine Web-Applikation ist die bessere Wahl, da sie auf allen Geräten, die über einen Browser verfügen, genutzt werden kann und nicht installiert werden muss. Außerdem ist die Entwicklung einer Web-Applikation kostengünstiger, da die Entwickler bereits Erfahrung mit der Entwicklung von Web-Applikationen haben.
 \subsubsection*{Hardware}
 Die Auswirkungen von Hardware auf die Qualität und Leistungsfähigkeit der Anwendung ist nicht signifikant, weswegen lediglich die weite Verbreitung als Kriterium anzuführen ist.
-Sowohl x86-Prozessoren als auch ARM Prozessoren gelten als weit verbreitet. Diese sollen eine mögliche Auswahl für die darauffolgenden Entscheidungen bilden.
+Sowohl x86-Prozessoren als auch ARM Prozessoren gelten als weit verbreitet.
+Diese sollen eine mögliche Auswahl für die darauffolgenden Entscheidungen bilden.
 % Hardware: 
 % - Hohe Skalierbarkeit und Leistungsfähigkeit: ARM- oder x86-Architektur
 \subsubsection*{Betriebssystem}
+Die am meisten verbreiteten Betriebssysteme sind Android, IOS, Windows macOS und Linux in verschiedenen Distributionen.
+Die mobilen Betriebssysteme werden für \ac{aMRS} nicht weiter betrachtet, da sie nicht geeignet sind.
+% //TODO: ggf Begründung
+Für x86-Prozessoren sind alle anwendbaren Betriebssysteme Windows macOS und Linux vorhanden, für die ARM-Prozessoren können Windows oder bestimmte Distributionen von Linux verwendet werden.
+Die Betriebssysteme Windows und macOS sind proprietär, außerdem werden für diese möglicherweise kostspielige Lizenzen benötigt, was einen Nachteil bei der Skalierung der Anwendung darstellt.
+Aufgrund dessen wird zur Implementierung der Anwendung ein Linux Betriebssystem ausgewählt.
 % Betriebssystem:
 % - Weite Verbreitung: Linux
 % - Skalierbarkeit: Linux (Kosten)
 % - Technologische Unabhängigkeit: Linux (MacOS und Windows sind proprietäre Betriebssysteme)
 % - Unsere Auswahl: Ubuntu Server 20.04 LTS weil zukunftssicher und stabil
 
+\subsubsection*{Programmiersprache}
+
+\begin{tabular} {|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
+\hline
+ & C\# & Python & Javascript \\
+\hline
+Vorwissen der Entwickler & 3/8 & 8/8 & 7/8 \\
+\hline
+Weite Verbreitung & 3,173 \% & 26,25 \% & 9,02 \% \\
+\hline
+Möglichkeiten der Web-Entwicklung (End-User-Kompatibilität) & Blazor & Django, Flask & Next.JS, Node.JS \\
+\hline
+Hoher Reifegrad bzw. Zukunftsicherheit & End of Life .NET6: 2024 & End of Life Python 3.11: 2027 & ECMAScript wird jährlich geupdated \\
+\hline
+\end{tabular}
 % Programmiersprache:
 
 % | | C# | Python | Javascript |
@@ -88,6 +110,21 @@ Sowohl x86-Prozessoren als auch ARM Prozessoren gelten als weit verbreitet. Dies
 % | Weite Verbreitung | 3,173 % | 26,25 % | 9,02 % |
 % | Möglichkeiten der Web-Entwicklung (End-User-Kompatibilität) | Blazor | Django, Flask | Next.JS, Node.JS | 
 % | Hoher Reifegrad bzw. Zukunftsicherheit | End of Life .NET6: 2024 | End of Life Python 3.11: 2027 | ECMAScript wird jährlich geupdated |
+
+
+\subsubsection*{Framework/Bibliotheken}
+
+\begin{tabular} {|m{3cm}|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
+\hline
+ & Blazor & Django & Next.JS & Node.JS \\
+\hline
+Vorwissen der Entwickler & 1/8 & 6/8 & 5/8 & 5/8 \\
+\hline
+Erreichung hoher End-User-Kompatibilität & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) \\
+\hline
+Hoher Reifegrad bzw. Zukunftsicherheit & End of Life .NET6: 2024 & End of Life Django 3.2: 2024 & unbekannt & End of Life Node.JS 18: 2025 \\
+\hline
+\end{tabular}
 
 % Framework/Bibliotheken:
 
@@ -105,43 +142,3 @@ Sowohl x86-Prozessoren als auch ARM Prozessoren gelten als weit verbreitet. Dies
 % django 3.2: https://endoflife.date/django
 % node.js 18: https://endoflife.date/nodejs
 % ecmascript: https://www.w3schools.com/js/js_versions.asp
-
-\paragraph*{Art der Applikation}
-
-\paragraph*{Hardware}
-
-\paragraph*{Betriebssystem}
-
-\paragraph*{Programmiersprache}
-
-Die folgende Tabelle...\\
-
-\begin{tabular} {|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
-\hline
- & C\# & Python & Javascript \\
-\hline
-Vorwissen der Entwickler & 3/8 & 8/8 & 7/8 \\
-\hline
-Weite Verbreitung & 3,173 \% & 26,25 \% & 9,02 \% \\
-\hline
-Möglichkeiten der Web-Entwicklung (End-User-Kompatibilität) & Blazor & Django, Flask & Next.JS, Node.JS \\
-\hline
-Hoher Reifegrad bzw. Zukunftsicherheit & End of Life .NET6: 2024 & End of Life Python 3.11: 2027 & ECMAScript wird jährlich geupdated \\
-\hline
-\end{tabular}
-
-\paragraph*{Framework/Bibliotheken}
-
-Die folgende Tabelle...\\
-
-\begin{tabular} {|m{3cm}|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
-\hline
- & Blazor & Django & Next.JS & Node.JS \\
-\hline
-Vorwissen der Entwickler & 1/8 & 6/8 & 5/8 & 5/8 \\
-\hline
-Erreichung hoher End-User-Kompatibilität & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) \\
-\hline
-Hoher Reifegrad bzw. Zukunftsicherheit & End of Life .NET6: 2024 & End of Life Django 3.2: 2024 & unbekannt & End of Life Node.JS 18: 2025 \\
-\hline
-\end{tabular}
