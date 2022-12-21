@@ -89,19 +89,30 @@ Aufgrund dessen wird zur Implementierung der Anwendung ein Linux Betriebssystem 
 
 \subsubsection*{Programmiersprache}
 
-\begin{tabular} {|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
-\hline
- & C\# & Python & Javascript \\
-\hline
-Vorwissen der Entwickler & 3/8 & 8/8 & 7/8 \\
-\hline
-Weite Verbreitung & 3,173 \%\cite{noauthor_github_nodate} & 26,25 \%\cite{noauthor_github_nodate} & 9,02 \%\cite{noauthor_github_nodate} \\
-\hline
-Möglichkeiten der Web-Entwicklung (End-User-Kompatibilität) & Blazor & Django, Flask & Next.JS, Node.JS \\
-\hline
-Hoher Reifegrad bzw. Zukunftsicherheit & End of Life .NET6: 2024\cite{noauthor_.net_nodate} & End of Life Python 3.11: 2027\cite{noauthor_python_nodate} & ECMAScript wird jährlich geupdated\cite{noauthor_javascript_nodate} \\
-\hline
-\end{tabular}
+Die Entscheidung, welche Programmiersprache benutzt werden soll, wird durch die Tabelle \ref{tab:programming_languages} für eine Auswahl von drei Programmiersprachen repräsentativ dargestellt.
+
+\begin{table}
+  \begin{tabular} {|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
+    \hline
+    & C\# & Python & Javascript \\
+    \hline
+    Vorwissen der Entwickler & 3/8 & 8/8 & 7/8 \\
+    \hline
+    Weite Verbreitung & 3,173 \%\cite{noauthor_github_nodate} & 26,25 \%\cite{noauthor_github_nodate} & 9,02 \%\cite{noauthor_github_nodate} \\
+    \hline
+    Möglichkeiten der Web-Entwicklung (End-User-Kompatibilität) & Blazor & Django, Flask & Next.JS, Node.JS \\
+    \hline
+    Hoher Reifegrad bzw. Zukunftsicherheit & End of Life .NET6: 2024\cite{noauthor_.net_nodate} & End of Life Python 3.11: 2027\cite{noauthor_python_nodate} & ECMAScript wird jährlich geupdated\cite{noauthor_javascript_nodate} \\
+    \hline
+  \end{tabular}
+  \caption{Übersicht der Programmiersprachen}
+  \label{tab:programming_languages}
+\end{table}
+
+Wie der Tabelle entnommen werden kann, sind alle drei Programmiersprachen weit verbreitet und werden von den Entwicklern bereits verwendet.
+Außerdem bieten alle eine akzeptable End of Life, wobei Python die längste Lebensdauer hat.
+TODO: schee macha
+
 % Programmiersprache:
 
 % | | C# | Python | Javascript |
@@ -114,17 +125,31 @@ Hoher Reifegrad bzw. Zukunftsicherheit & End of Life .NET6: 2024\cite{noauthor_.
 
 \subsubsection*{Framework/Bibliotheken}
 
-\begin{tabular} {|m{3cm}|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
-\hline
- & Blazor & Django & Next.JS & Node.JS \\
-\hline
-Vorwissen der Entwickler & 1/8 & 6/8 & 5/8 & 5/8 \\
-\hline
-Erreichung hoher End-User-Kompatibilität & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) \\
-\hline
-Hoher Reifegrad bzw. Zukunftsicherheit & End of Life .NET6: 2024\cite{noauthor_.net_nodate} & End of Life Django 3.2: 2024\cite{noauthor_django_nodate} & unbekannt & End of Life Node.JS 18: 2025\cite{noauthor_node.js_nodate}\\
-\hline
-\end{tabular}
+Für die Entwicklung von Webanwendungen gibt es verschiedene Frameworks und Bibliotheken, die essenziell für eine effiziente Umsetzung sind.
+Da prinzipiell alle oben genannten Programmiersprachen für die Entwicklung von Webanwendungen geeignet sind, werden repräsentative Frameworks und Bibliotheken für die drei Programmiersprachen C\#, Python und Javascript in der Tabelle \ref{tab:frameworks} verglichen.
+
+\begin{table}
+  \begin{tabular} {|m{3cm}|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
+    \hline
+    & Blazor & Django & Next.JS & Node.JS \\
+    \hline
+    Vorwissen der Entwickler & 1/8 & 6/8 & 5/8 & 5/8 \\
+    \hline
+    Erreichung hoher End-User-Kompatibilität & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) \\
+    \hline
+    Hoher Reifegrad bzw. Zukunftsicherheit & End of Life .NET6: 2024\cite{noauthor_.net_nodate} & End of Life Django 3.2: 2024\cite{noauthor_django_nodate} & End of Life unbekannt & End of Life Node.JS 18: 2025\cite{noauthor_node.js_nodate}\\
+    \hline
+  \end{tabular}
+  \caption{Übersicht der Frameworks und Bibliotheken}
+  \label{tab:frameworks}
+\end{table}
+
+Wie die Tabelle zeigt, ist Blazor das Framework mit dem geringsten Vorwissen der Entwickler und ist somit für die Entwicklung der Webanwendung am ineffizientesten.
+Somit scheidet auch C\# als Programmiersprache aus.
+Da Next.JS noch sehr neu auf dem Markt ist und kein End of Life bekannt ist, ist der Reifegrad für uns nicht ausreichend.
+% Gerade jetzt gab es ein Sprung (Version 12 auf Version 13), bei welcher viele Unternehmen ihr Apps anpassen mussten. 
+Da Django mit Python als Full-Stack-Framework am bekanntesten bei den Entwicklern ist, würden wir diese Kombination von Programmiersprache und Framework empfehlen.
+Mit dieser Open-Source-Kombination lässt sich auch das im Klassenmodell definierte Zusammenspiel von Controller und View ideal umsetzen.
 
 % Framework/Bibliotheken:
 
