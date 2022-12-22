@@ -4,7 +4,7 @@
 % DATEN: Name, Restaurant-Name, Restaurant-Adresse, Rechnungsbezeichner (identisch zu Name auf Rechnung), Tags (vegan)
 % TODO: Evtl. in Kapitel Machbarkeit beschreiben, dass 5 Minuten valide sind, da Kunde erst das Gericht bestellen und essen muss bevor eine Rechnung ausgestellt und somit das Gericht bewertet werden kann.
 Für die Betreibung von \ac{aMRS} werden die folgenden Daten Periodisch (z.B.: jede fünf Minuten) vom \hyperref[gls:informationsportal]{Informationsportal} abgerufen und in \ac{aMRS} persistent gespeichert:
-Die zur eindeutigen Identifikation der Tagesgerichte benötigten Attribute \hyperref[gls:restaurantname]{Restaurantname}, Restaurantadresse und \hyperref[gls:Rechnungsbezeichner]{Rechnungsbezeichner}, sowie die Attribute \hyperref[gls:gerichtname]{Gerichtname} und Klassifikationen (z.B.: Vegan).
+Die zur eindeutigen Identifikation der Tagesgerichte benötigten Attribute \hyperref[gls:restaurantname]{Restaurantname}, \hyperref[gls:restaurantadresse]{Restaurantadresse} und \hyperref[gls:Rechnungsbezeichner]{Rechnungsbezeichner}, sowie die Attribute \hyperref[gls:gerichtname]{Gerichtname} und Klassifikationen (z.B.: Vegan).
 Die bezogenen Daten werden in jeder Periode zunächst auf ausgewählte Klassifikationen (z.B.: Vegan) gefiltert und anschließend mit den bestehenden Daten in \ac{aMRS} verglichen, sodass das System ausschließlich um neue Datensätze erweitert wird.
 Bei der Konfiguration von \ac{aMRS} können die zu filternden Klassifikationen konfiguriert werden, wodurch die durch den \hyperref[gls:auftraggeber]{Auftraggeber} geforderte Spezifizierung auf Vegane Gerichte ermöglicht wird.
 \newparagraph
@@ -22,7 +22,7 @@ Die erhaltenen Daten sind dabei bereits in die folgenden Attribute untergliedert
 \begin{itemize}
     \item Alle \hyperref[gls:Rechnungsbezeichner]{Rechnungsbezeichner} die auf der Rechnung aufgelistet sind
     \item \hyperref[gls:restaurantname]{Restaurantname}
-    \item Restaurantadresse
+    \item \hyperref[gls:restaurantadresse]{Restaurantadresse}
     \item Rechnungsnummer
 \end{itemize}
 Ausgehend von den erhaltenen Daten gleicht \ac{aMRS} die enthaltenen Gerichte mit den im System gespeicherten Daten ab.
@@ -36,4 +36,4 @@ Entspricht die erfasste Bewertung den festgelegten Kriterien, wird diese in \ac{
 \newparagraph
 Über eine separate Schnittstelle kann das \hyperref[gls:informationsportal]{Informationsportal} die Bewertungen zu den Gerichten abrufen.
 % INFO: Die Bewertung besteht aus Text und Zahl (1-5)
-Die durch \ac{aMRS} bereitgestellten Daten enthalten dabei die Attribute \hyperref[gls:restaurantname]{Restaurantname}, Restaurantadresse, \hyperref[gls:Rechnungsbezeichner]{Rechnungsbezeichner} und die Bewertung.
+Die durch \ac{aMRS} bereitgestellten Daten enthalten dabei die Attribute \hyperref[gls:restaurantname]{Restaurantname}, \hyperref[gls:restaurantadresse]{Restaurantadresse}, \hyperref[gls:Rechnungsbezeichner]{Rechnungsbezeichner} und die Bewertung.
