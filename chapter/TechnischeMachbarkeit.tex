@@ -3,7 +3,7 @@
 Die technische Machbarkeit ist ein wichtiger Aspekt bei der Entwicklung eines Software-Systems, da sie darüber entscheidet, ob das System überhaupt entwickelt werden kann und welche Technologien dafür verwendet werden müssen. 
 Daher ist es wichtig, die technische Machbarkeit frühzeitig im Entwicklungsprozess zu untersuchen, um sicherzustellen, dass das System erfolgreich entwickelt werden kann.
 Die Analyse der technischen Machbarkeit erfolgt unter der Beachtung der fünf wesentlichen Einflussfaktoren für die Auswahl von Technologien: Entwickler/Zulieferer, Unternehmen, Markt, Zeit und Gesetze.
-
+\newparagraph
 Aus diesen Einflussfaktoren werden im folgenden Kapitel spezielle Ausschlusskriterien für Technologien abgeleitet.
 Anschließend wird eine Technologie anhand der Kriterien und den in den vorherigen Kapiteln konzeptionierten Komponenten und Abläufen empfohlen, mit der die Anforderungen des Auftraggebers umgesetzt werden können.
 
@@ -13,34 +13,34 @@ Es ist wichtig, dass die Technologien, die für das System verwendet werden, \te
 Das bedeutet, dass sie nicht von anderen Systemen abhängig sind und problemlos in jedes System integriert werden können. 
 Die Unabhängigkeit wird vor allem deshalb vorausgesetzt, da das System des Auftraggebers völlig unbekannt ist und sich das neue System problemlos in die vorhandene Architektur einfügen können muss.
 % TODO: check if needed
-
+\newparagraph
 Ein weiteres wichtiges Kriterium ist das \textbf{Vorwissen der Entwickler}. 
 In diesem Fall verfügen die Entwickler der \vFKW bereits über umfangreiche Kenntnisse in den Webtechnologien React, TypeScript, JavaScript, Next.js, Flask und Django. 
 Auch Kenntnisse in den Backend-Technologien C\#, Python, MariaDB, MySQL und PostgreSQL, sowie in der Cloud-Technologie \ac{AWS} sind bereits ausgeprägt vorhanden. 
 Da ein Erlernen neuer Fähigkeiten sehr zeitaufwändig und somit auch kostspielig sein kann, sollen die verwendeten Technologien auf den Kenntnissen des Entwicklerteams basieren und die bereits vorhandenen Fähigkeiten genutzt werden.
-
+\newparagraph
 Ein zusätzlicher wichtiger Faktor ist die \textbf{weite Verbreitung} der verwendeten Technologien. 
 Je verbreiteter eine Technologie ist, desto einfacher ist es, für sie qualifiziertes Personal zu finden und Support zu erhalten. 
 Außerdem besteht eine höhere Chance, dass die Technologie von mehreren anderen Unternehmen genutzt wird. 
 Dadurch wird einer Abhängigkeit von einzelnen Marktteilnehmern entgegengewirkt.
-
+\newparagraph
 Eine \textbf{hohe End-User-Kompatibilität} ist ebenfalls wichtig, da jeder Kunde die Benutzeroberfläche einfach aufrufen können soll, ohne dass ein aufwendiges Setup auf seinem Endgerät erforderlich ist. 
 Dies kann durch die Verwendung plattformunabhängiger Front-End-Technologien erreicht werden. 
 Ein weiterer Vorteil einer plattformunabhängigen Entwicklung ist der Entwicklungsaufwand, der nur einmal durchgeführt werden muss, um ein für alle Plattformen ausgelegtes System zu schaffen und nicht für jede Plattform einzelne Entwicklungsaufwände betrieben werden müssen.
-
+\newparagraph
 Ein weiteres wichtiges Ausschlusskriterium für Technologien ist die \textbf{Einhaltung gesetzlicher Grundlagen}, insbesondere im Bereich Datenschutz. 
 Dies ist besonders wichtig beim Scan von Rechnungen und anderen Dokumenten, die sensible persönliche Daten enthalten können. 
 Es ist unerlässlich, dass jede verwendete Technologie die Anforderungen des Datenschutzgesetzes erfüllt und die Privatsphäre der Betroffenen schützt. 
 Außerdem sind die gesetzlichen Grundlagen zu den Lizenzen verschiedener Technologien zu beachten, damit diese nicht verletzt werden und der FKW Software Solutions Group hierdurch kein Schaden entstehen kann.
-
+\newparagraph
 Ebenfalls wichtig bei der Auswahl einer Technologie ist ihre \textbf{Skalierbarkeit}. 
 Durch die Skalierbarkeit wird festgelegt, wie gut sich die Technologie an ihre Umgebung anpasst, sodass beispielsweise bei einer stark ansteigenden Anzahl an Aufrufen weiterhin genug Leistung vorhanden ist, um die Anwendung ohne Einschränkungen betreiben zu können. 
 Da keine Informationen zum Nutzungsverhalten im System des Auftraggebers vorliegen, muss das neue System an alle möglichen Nutzungsverhalten angepasst werden können, weswegen die Skalierbarkeit der Technologien ein entscheidender Punkt bei der Auswahl ist.
-
+\newparagraph
 Die gewählte Technologie muss sich durch einen \textbf{hohen Reifegrad} auszeichnen, damit die Wahrscheinlichkeit für grundsätzliche Änderungen während der Umsetzung reduziert wird, die durch mögliche Bugfixes in der zugrundeliegenden Technologie entstehen könnten.
 Zusätzlich muss die Technologie eine gewisse Zukunftssicherheit aufweisen, damit eine Langlebigkeit des Produkts gewährleistet werden kann. 
 Somit wird präventiv gegen einen erneuten Entwicklungsaufwand nach kurzer Zeit vorgegangen.
-
+\newparagraph
 Außerdem ist eine \textbf{Modularität der Technologien} von Relevanz, um die maximale Unabhängigkeit und Austauschbarkeit der Technologien zu ermöglichen. 
 Dadurch wird der Anpassungsbedarf bei Austausch einer Technologie minimiert.
 
@@ -91,7 +91,7 @@ Aufgrund dessen wird zur Implementierung der Anwendung ein Linux Betriebssystem 
 
 Die Entscheidung, welche Programmiersprache benutzt werden soll, wird durch die Tabelle \ref{tab:programming_languages} für eine Auswahl von drei Programmiersprachen repräsentativ dargestellt.
 
-\begin{table}
+\begin{table}[H]
   \begin{tabular} {|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
     \hline
     & C\# & Python & Javascript \\
@@ -107,11 +107,10 @@ Die Entscheidung, welche Programmiersprache benutzt werden soll, wird durch die 
   \end{tabular}
   \caption{Übersicht der Programmiersprachen}
   \label{tab:programming_languages}
-\end{table}
-
+\end{table}\noindent
 Wie der Tabelle entnommen werden kann, sind alle drei Programmiersprachen weit verbreitet und werden von den Entwicklern bereits verwendet.
-Außerdem bieten alle eine akzeptable End of Life, wobei Python die längste Lebensdauer hat.
-TODO: schee macha
+Außerdem bieten alle Sprachen eine akzeptable End of Life.
+Da so keine Entscheidung für eine Programmiersprache gefunden werden kann, werden zusätzlich zur Sprache die angebotenen Frameworks und Bibliotheken verglichen um somit eine Entscheidung für Sprache und Framework zu treffen
 
 % Programmiersprache:
 
@@ -128,7 +127,7 @@ TODO: schee macha
 Für die Entwicklung von Webanwendungen gibt es verschiedene Frameworks und Bibliotheken, die essenziell für eine effiziente Umsetzung sind.
 Da prinzipiell alle oben genannten Programmiersprachen für die Entwicklung von Webanwendungen geeignet sind, werden repräsentative Frameworks und Bibliotheken für die drei Programmiersprachen C\#, Python und Javascript in der Tabelle \ref{tab:frameworks} verglichen.
 
-\begin{table}
+\begin{table}[H]
   \begin{tabular} {|m{3cm}|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
     \hline
     & Blazor & Django & Next.JS & Node.JS \\
@@ -142,15 +141,16 @@ Da prinzipiell alle oben genannten Programmiersprachen für die Entwicklung von 
   \end{tabular}
   \caption{Übersicht der Frameworks und Bibliotheken}
   \label{tab:frameworks}
-\end{table}
-
+\end{table}\noindent
 Wie die Tabelle zeigt, ist Blazor das Framework mit dem geringsten Vorwissen der Entwickler und ist somit für die Entwicklung der Webanwendung am ineffizientesten.
 Somit scheidet auch C\# als Programmiersprache aus.
 Da Next.JS noch sehr neu auf dem Markt ist und kein End of Life bekannt ist, ist der Reifegrad für uns nicht ausreichend.
-% Gerade jetzt gab es ein Sprung (Version 12 auf Version 13), bei welcher viele Unternehmen ihr Apps anpassen mussten. 
-Da Django mit Python als Full-Stack-Framework am bekanntesten bei den Entwicklern ist, würden wir diese Kombination von Programmiersprache und Framework empfehlen.
+% Gerade jetzt gab es ein Sprung (Version 12 auf Version 13), bei welcher viele Unternehmen ihr Apps anpassen mussten.  
+Da Django mit Python als Full-Stack-Framework im Vergleich zu Node.JS bekannter bei den Entwicklern ist, würden wir diese Kombination von Programmiersprache und Framework empfehlen.
 Mit dieser Open-Source-Kombination lässt sich auch das im Klassenmodell definierte Zusammenspiel von Controller und View ideal umsetzen.
-
+Für die Datenbank empfehlen wir eine relationale PostgreSQL-Datenbank.
+Die Applikation sollte für einen Ubuntu Server 20.04 betriebenen Rechner entwickelt werden, der einen x86 Prozessor verwendet.
+Für die Schnittstelle zum Informationsportal empfehlen wir die Verwendung von HTTP und JSON.
 % Framework/Bibliotheken:
 
 % | | Blazor | Django | Next.JS | Node.JS |
