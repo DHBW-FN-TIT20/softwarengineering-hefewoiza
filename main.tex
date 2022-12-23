@@ -101,7 +101,7 @@
 \newcommand{\newparagraph}{\newline \newline}
 % Quellenangabe bei Bildern
 \newcommand{\customcaption}[2]{\caption[#1]{ #1. #2.}}
-\def\vFKW{FKW Software Solutions}
+\def\vFKW{FKW Software Solutions }
 
 %%%%%%%%%%%%%%%%%%%% Zitatbibliothek einbinden %%%%%%%%%%%%%%%%%%%%%
 \addbibresource{./literatur/literatur.bib}
@@ -162,8 +162,7 @@
 \include{pages/abkuerzungsverzeichnis}
 \include{pages/abbildungsverzeichnis}
 \include{pages/tabellenverzeichnis}
-\include{pages/listingsverzeichnis}
-\include{chapter/Glossar}
+%\include{pages/listingsverzeichnis}
 % \include{pages/vorwort}
 
 
@@ -175,9 +174,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                   EIGENE KAPITEL EINFÜGEN                  %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{chapter/Glossar}
 \include{chapter/Systemidee}
 \include{chapter/AblaufbeschreibungDerSystemidee}
 \include{chapter/Geschaeftsfaelle}
+\include{chapter/TechnischeMachbarkeit}
 \include{chapter/Fachklassenmodell}
 \include{chapter/Systemablaufmodell}
 
