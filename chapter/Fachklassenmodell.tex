@@ -10,7 +10,7 @@ untergliedert, welche nur über die Datenspeicherung verbunden sind. Diese nutzt
 Entkopplung der Datenzugriffsschicht vom restlichen System zu ermöglichen. Über das Adapter Pattern ist eine
 Schnittstelle zwischen \hyperref[gls:informationsportal]{Informationsportal} und \ac{aMRS} geplant. Zum andern bietet \ac{aMRS} mit ihrer eigenen GUI die
 Möglichkeit den im \autoref{cha:AblaufbeschreibungderSystemidee} beschriebenen Bewertungsprozess durchzuführen. Dieser Prozess nutzt einen Adapter
-zu einem externen OCR-System und diverse Validatoren, welche mithilfe des Iterator Pattern leicht an zukünftige
+zu einem externen \hyperref[gls:ocr-System]{OCR-System} und diverse Validatoren, welche mithilfe des Iterator Pattern leicht an zukünftige
 Kundenwünsche angepasst werden können.
 
 \newpage
@@ -47,8 +47,8 @@ Die Klasse InformationsPortalAdapter gitb dem \ac{aMRS} die Möglichkeit \hyperr
 Dabei werden die \hyperref[gls:tagesgericht]{Tagesgerichte} nach Klassifikation gefiltert.
 \newline
 
-\noindent \hyperref[gls:ocr-BillAnalyzer]{\textbf{OCR-BillAnalyzer}}\\
-Die Klasse \hyperref[gls:ocr-BillAnalyzer]{OCR-BillAnalyzer} stellt die Kommunikation von \ac{aMRS} zum externen OCR-System her.
+\noindent \hyperref[gls:ocr-System]{\textbf{OCR-BillAnalyzer}}\\
+Die Klasse \hyperref[gls:ocr-System]{OCR-BillAnalyzer} stellt die Kommunikation von \ac{aMRS} zum externen \hyperref[gls:ocr-System]{OCR-System} her.
 
 
 \subsection*{Boundary}
