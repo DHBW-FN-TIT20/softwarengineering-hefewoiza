@@ -21,6 +21,7 @@
 \usepackage[english, ngerman]{babel}                                                  % deutsche Silbentrennung
 \usepackage[utf8]{inputenc}                                                           % Umlaute
 \usepackage[T1]{fontenc}													                                    % Umlaute auch richtig ausgeben
+\usepackage[official]{eurosym}                                                        % Euro Symbol
 % \usepackage{newtxtext,newtxmath}                                                      % Font = Times New Roman
 \usepackage{hyperref}
 \usepackage[nottoc]{tocbibind}
@@ -50,14 +51,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%                      Angaben zur Arbeit                      %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\def\vFirmenlogoPfad{}                  %% relativer Pfad Bsp.: images/Firmenlogo.png
-\def\vDHBWLogoPfad{images/DHBW_logo.jpg}                          %% relativer Pfad Bsp.: images/DHBW_logo.jpg
-\def\vUnterschrift{}                    %% Pfad zu Bild mit Unterschrift (für digitale Abgabe) Bsp.: images/Unterschrift.png
+\def\vFirmenlogoPfad{}                    %% relativer Pfad Bsp.: images/Firmenlogo.png
+\def\vDHBWLogoPfad{images/DHBW_logo.jpg}  %% relativer Pfad Bsp.: images/DHBW_logo.jpg
+\def\vUnterschrift{}                      %% Pfad zu Bild mit Unterschrift (für digitale Abgabe) Bsp.: images/Unterschrift.png
 
 \def\vTitel{Software Engineering 2}                           %% 
-\def\vUntertitel{}                      %% 
-\def\vArbeitstyp{Hausarbeit}                      %% Projektarbeit/Seminararbeit/Bachelorarbeit
-\def\vArbeitsbezeichnung{}              %% T1000/T2000/T3000
+\def\vUntertitel{}                        %% 
+\def\vArbeitstyp{Hausarbeit}              %% Projektarbeit/Seminararbeit/Bachelorarbeit
+\def\vArbeitsbezeichnung{}                %% T1000/T2000/T3000
 
 \def\vLB{Lukas Braun}
 \def\vJB{Johannes Brandenburger}
@@ -70,22 +71,22 @@
 
 
 
-\def\vAutor{\vJB, \vLB, \vDF, \vFG, \vFH, \vPP, \vHS, \vBS}                           %% Vorname Nachname
-\def\vMatrikelnummer{}                  %% 7-stellige Zahl
-\def\vKursKuerzel{TIT20}                     %% Bsp.: TIT20
-\def\vPhasenbezeichnung{Theoriephasen}               %% Praxisphase/Theoriephase
-\def\vStudienJahr{dritte}                     %% erste/zweite/dritte
-\def\vDHBWStandort{Ravensburg}                    %% Bsp.: Ravensburg
-\def\vDHBWCampus{Friedrichshafen}                      %% Bsp.: Friedrichshafen
-\def\vFakultaet{Technik}                       %% Technik/Wirtschaft
-\def\vStudiengang{Informatik}                     %% Informationstechnik/...
-\def\vKurs{TIT20}                     %% IT/...
+\def\vAutor{\vJB, \vLB, \vDF, \vFG, \vFH, \vPP, \vHS, \vBS}   %% Vorname Nachname
+\def\vMatrikelnummer{}                                        %% 7-stellige Zahl
+\def\vKursKuerzel{TIT20}                                      %% Bsp.: TIT20
+\def\vPhasenbezeichnung{Theoriephasen}                        %% Praxisphase/Theoriephase
+\def\vStudienJahr{dritte}                                     %% erste/zweite/dritte
+\def\vDHBWStandort{Ravensburg}                                %% Bsp.: Ravensburg
+\def\vDHBWCampus{Friedrichshafen}                             %% Bsp.: Friedrichshafen
+\def\vFakultaet{Technik}                                      %% Technik/Wirtschaft
+\def\vStudiengang{Informatik}                                 %% Informationstechnik/...
+\def\vKurs{TIT20}                                             %% IT/...
 
-\def\vBearbeitungsort{Friedrichshafen}                 %%                       %% 
+\def\vBearbeitungsort{Friedrichshafen}                        %%                       %% 
 \def\vBetreuer{Prof. Dr. Andreas Judt}                        %% Vorname Nachname
 
-\def\vAbgabedatum{\today}               %% DD. MONTH YYYY
-\def\vBearbeitungszeitraum{01.10.2022 - 23.12.2022}            %% DD.MM.YYYY - DD.MM.YYYY
+\def\vAbgabedatum{\today}                                     %% DD. MONTH YYYY
+\def\vBearbeitungszeitraum{01.10.2022 - 23.12.2022}           %% DD.MM.YYYY - DD.MM.YYYY
 %TODO Datum anpassen
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Eigene Kommandos %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -162,6 +163,7 @@
 \include{pages/abkuerzungsverzeichnis}
 \include{pages/abbildungsverzeichnis}
 \include{pages/tabellenverzeichnis}
+\include{chapter/Glossar}
 %\include{pages/listingsverzeichnis}
 % \include{pages/vorwort}
 
@@ -174,23 +176,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                   EIGENE KAPITEL EINFÜGEN                  %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{chapter/Glossar}
 \include{chapter/Systemidee}
 \include{chapter/AblaufbeschreibungDerSystemidee}
 \include{chapter/Geschaeftsfaelle}
-\include{chapter/TechnischeMachbarkeit}
 \include{chapter/Fachklassenmodell}
 \include{chapter/Systemablaufmodell}
+\include{chapter/TechnischeMachbarkeit}
 
 %%%%%%%%%%%%%%%%%%%%%%% Literaturverzeichnis %%%%%%%%%%%%%%%%%%%%%%%
 \include{pages/literaturverzeichnis}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anhang %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\renewcommand{\thetable}{\Alph{section}.\arabic{table}}
-\renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
-\renewcommand{\thelstlisting}{\Alph{section}.\arabic{lstlisting}}
-\pagenumbering{Alph}
+% \renewcommand{\thetable}{\Alph{section}.\arabic{table}}
+% \renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
+% \renewcommand{\thelstlisting}{\Alph{section}.\arabic{lstlisting}}
+% \pagenumbering{Alph}
 
-\include{pages/anhang}
+% \include{pages/anhang}
 \end{document}

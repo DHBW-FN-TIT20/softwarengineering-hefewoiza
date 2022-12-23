@@ -1,17 +1,17 @@
 \section{Systemidee}
 
-Im Rahmen dieser \ac{OOA} soll das Softwaresystem \textit{\ac{aMRS}} konzeptioniert werden.
+Im Rahmen dieser \ac{OOA} soll das Softwaresystem \ac{aMRS} konzeptioniert werden.
 \newparagraph
 Das Ziel des Systems ist die Verwirklichung der vom \hyperref[gls:auftraggeber]{Auftraggeber} gewünschten Erweiterung des \hyperref[gls:informationsportal]{Informationsportals} zum Angebot von \hyperref[gls:tagesgericht]{Tagesgerichten} um eine \hyperref[gls:authentischeBewertung]{authentische Bewertung} \hyperref[gls:vegan]{veganer} Gerichte.
-Hierzu schlagen wir die \textit{\vFKW}, das nachfolgend spezifizierte Softwaresystem \textit{\ac{aMRS}} vor, welches den Bewertungsprozess von \hyperref[gls:vegan]{veganen} Speisen realisiert und somit die gestellten Anforderungen abdeckt.
-\textit{\ac{aMRS}} verwaltet \hyperref[gls:vegan]{vegane} Speisen des \hyperref[gls:informationsportal]{Informationsportals} und bietet Kunden die Möglichkeit, ihr Essen zu bewerten.
+Hierzu schlagen wir die \vFKW, das nachfolgend spezifizierte Softwaresystem \ac{aMRS} vor, welches den Bewertungsprozess von \hyperref[gls:vegan]{veganen} Speisen realisiert und somit die gestellten Anforderungen abdeckt.
+\ac{aMRS} verwaltet \hyperref[gls:vegan]{vegane} Speisen des \hyperref[gls:informationsportal]{Informationsportals} und bietet Kunden die Möglichkeit, ihr Essen zu bewerten.
 Diese Bewertungen können anschließend vom \hyperref[gls:informationsportal]{Informationsportal} abgerufen werden.
 Um sicherzustellen, dass die Bewertungen authentisch sind, verifiziert das System den Kunden als tatsächlichen Käufer und überprüft die Bewertungen zusätzlich auf ihre Inhalte.
 \newparagraph
-Das von uns konzipierte System \textit{\ac{aMRS}} erhält die \hyperref[gls:vegan]{veganen} \hyperref[gls:tagesgericht]{Tagesgerichte} vom \hyperref[gls:informationsportal]{Informationsportal} und speichert diese.
+Das von uns konzipierte System \ac{aMRS} erhält die \hyperref[gls:vegan]{veganen} \hyperref[gls:tagesgericht]{Tagesgerichte} vom \hyperref[gls:informationsportal]{Informationsportal} und speichert diese.
 Somit wird die Bewertung der Gerichte zu einem späteren Zeitpunkt ermöglicht.
-Erstellte Bewertungen können zusätzlich wiederkehrenden \hyperref[gls:tagesgericht]{Tagesgerichten} zugeordnet und bereitgestellt werden. Grundsätzlich werden sämtliche Daten persistent in \textit{\ac{aMRS}} gespeichert.
-Dies macht \textit{\ac{aMRS}} erweiterbar und flexibel.
+Erstellte Bewertungen können zusätzlich wiederkehrenden \hyperref[gls:tagesgericht]{Tagesgerichten} zugeordnet und bereitgestellt werden. Grundsätzlich werden sämtliche Daten persistent in \ac{aMRS} gespeichert.
+Dies macht \ac{aMRS} erweiterbar und flexibel.
 \newparagraph
 Für den Bewertungsprozess bietet unsere Software-Lösung eine eigene Oberfläche, die parallel betrieben wird.
 Somit müssen nur minimale (sonst teure) Anpassungen am bereits vorhandenen \hyperref[gls:informationsportal]{Informationsportal} getätigt werden.
@@ -20,12 +20,19 @@ Somit wird der Kauf verifiziert, ohne dass teure Anpassungen bei den \hyperref[g
 
 \subsection{Voraussetzungen an das Informationsportal}
 Es wird vorausgesetzt, dass das System des \hyperref[gls:auftraggeber]{Auftraggebers} eine Schnittstelle bereitstellt, worüber die Daten zu den aktuellen \hyperref[gls:tagesgericht]{Tagesgerichten} abgerufen werden können.
-Ein Gericht wird eindeutig durch einen Namen, ein \hyperref[gls:restaurantname]{Restaurantname}, eine \hyperref[gls:restaurantadresse]{Restaurantadresse} und einen \hyperref[gls:Rechnungsbezeichner]{Rechnungsbezeichner} identifiziert.
+Ein Gericht wird eindeutig durch einen Namen, ein \hyperref[gls:restaurantname]{Restaurantname}, eine \hyperref[gls:restaurantAdresse]{Restaurantadresse} und einen \hyperref[gls:Rechnungsbezeichner]{Rechnungsbezeichner} identifiziert.
 Der \hyperref[gls:Rechnungsbezeichner]{Rechnungsbezeichner} wird von den \hyperref[gls:restaurant]{Restaurants} definiert und ist identisch zu dem jeweiligen Bezeichner auf dem gedruckten Kassenbeleg.
 Außerdem müssen die \hyperref[gls:vegan]{veganen} Speisen als solche eindeutig gekennzeichnet sein.
 \newparagraph
-Um einen Bewertungsprozess zu starten, muss das \hyperref[gls:informationsportal]{Informationsportal} eine Verknüpfung bzw. einen Verweis zu \textit{\ac{aMRS}} ermöglichen.
+Um einen Bewertungsprozess zu starten, muss das \hyperref[gls:informationsportal]{Informationsportal} eine Verknüpfung bzw. einen Verweis zu \ac{aMRS} ermöglichen.
 Teilnehmende \hyperref[gls:restaurant]{Restaurants} müssen Rechnungen nach der aktuellen deutschen Gesetzeslage ausstellen.
+
+\subsection{Entwicklungsstufen}
+
+\noindent Die erste Version von \ac{aMRS} deckt die oben beschriebenen Funktionen ab. \newline
+
+\noindent Wenn gewünscht, kann das System in einer zweiten Entwicklungsstufe durch eine Benutzerverwaltung ergänzt werden.
+Somit könnten Benutzer im Nachhinein ihre Bewertungen verändern oder löschen.
 
 \subsection{Kosten}
 
@@ -35,8 +42,8 @@ Teilnehmende \hyperref[gls:restaurant]{Restaurants} müssen Rechnungen nach der 
 % Stunden pro Tag: 8 h
 % Gesamt: 241.920 €
 
-Für die Entwicklung der ersten Version von \textit{\ac{aMRS}} werden in unserem 8-köpfigen Team 21 Arbeitstage benötigt.
-Der Stundensatz wird hierbei auf 180~€ festgelegt.
-Bei einem Arbeitstag mit 8 Arbeitsstunden ergibt dies eine Gesamtsumme von 241.920~€ (inkl. Steuern).
+Für die Entwicklung der ersten Version von \ac{aMRS} werden in unserem 8-köpfigen Team 21 Arbeitstage benötigt.
+Der Stundensatz wird hierbei auf 180~\euro{} festgelegt.
+Bei einem Arbeitstag mit 8 Arbeitsstunden ergibt dies eine Gesamtsumme von 241.920~\euro{} (inkl. Steuern).
 
 
