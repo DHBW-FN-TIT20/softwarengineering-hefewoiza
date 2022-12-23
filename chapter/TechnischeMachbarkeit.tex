@@ -1,0 +1,169 @@
+\section{Technische Machbarkeit}
+
+Die technische Machbarkeit ist ein wichtiger Aspekt bei der Entwicklung eines Software-Systems, da sie darüber entscheidet, ob das System überhaupt entwickelt werden kann und welche Technologien dafür verwendet werden müssen. 
+Daher ist es wichtig, die technische Machbarkeit frühzeitig im Entwicklungsprozess zu untersuchen, um sicherzustellen, dass das System erfolgreich entwickelt werden kann.
+Die Analyse der technischen Machbarkeit erfolgt unter der Beachtung der fünf wesentlichen Einflussfaktoren für die Auswahl von Technologien: Entwickler/Zulieferer, Unternehmen, Markt, Zeit und Gesetze.
+\newparagraph
+Aus diesen Einflussfaktoren werden im folgenden Kapitel spezielle Ausschlusskriterien für Technologien abgeleitet.
+Anschließend wird eine Technologie anhand der Kriterien und den in den vorherigen Kapiteln konzeptionierten Komponenten und Abläufen empfohlen, mit der die Anforderungen des Auftraggebers umgesetzt werden können.
+
+\subsection{Definition der Ausschlusskriterien}
+
+Es ist wichtig, dass die Technologien, die für das System verwendet werden, \textbf{technologisch unabhängig} sind. 
+Das bedeutet, dass sie nicht von anderen Systemen abhängig sind und problemlos in jedes System integriert werden können. 
+Die Unabhängigkeit wird vor allem deshalb vorausgesetzt, da das System des Auftraggebers völlig unbekannt ist und sich das neue System problemlos in die vorhandene Architektur einfügen können muss.
+% TODO: check if needed
+\newparagraph
+Ein weiteres wichtiges Kriterium ist das \textbf{Vorwissen der Entwickler}. 
+In diesem Fall verfügen die Entwickler der \vFKW bereits über umfangreiche Kenntnisse in den Webtechnologien React, TypeScript, JavaScript, Next.js, Flask und Django. 
+Auch Kenntnisse in den Backend-Technologien C\#, Python, MariaDB, MySQL und PostgreSQL, sowie in der Cloud-Technologie \ac{AWS} sind bereits ausgeprägt vorhanden. 
+Da ein Erlernen neuer Fähigkeiten sehr zeitaufwändig und somit auch kostspielig sein kann, sollen die verwendeten Technologien auf den Kenntnissen des Entwicklerteams basieren und die bereits vorhandenen Fähigkeiten genutzt werden.
+\newparagraph
+Ein zusätzlicher wichtiger Faktor ist die \textbf{weite Verbreitung} der verwendeten Technologien. 
+Je verbreiteter eine Technologie ist, desto einfacher ist es, für sie qualifiziertes Personal zu finden und Support zu erhalten. 
+Außerdem besteht eine höhere Chance, dass die Technologie von mehreren anderen Unternehmen genutzt wird. 
+Dadurch wird einer Abhängigkeit von einzelnen Marktteilnehmern entgegengewirkt.
+\newparagraph
+Eine \textbf{hohe End-User-Kompatibilität} ist ebenfalls wichtig, da jeder Kunde die Benutzeroberfläche einfach aufrufen können soll, ohne dass ein aufwendiges Setup auf seinem Endgerät erforderlich ist. 
+Dies kann durch die Verwendung plattformunabhängiger Front-End-Technologien erreicht werden. 
+Ein weiterer Vorteil einer plattformunabhängigen Entwicklung ist der Entwicklungsaufwand, der nur einmal durchgeführt werden muss, um ein für alle Plattformen ausgelegtes System zu schaffen und nicht für jede Plattform einzelne Entwicklungsaufwände betrieben werden müssen.
+\newparagraph
+Ein weiteres wichtiges Ausschlusskriterium für Technologien ist die \textbf{Einhaltung gesetzlicher Grundlagen}, insbesondere im Bereich Datenschutz. 
+Dies ist besonders wichtig beim Scan von Rechnungen und anderen Dokumenten, die sensible persönliche Daten enthalten können. 
+Es ist unerlässlich, dass jede verwendete Technologie die Anforderungen des Datenschutzgesetzes erfüllt und die Privatsphäre der Betroffenen schützt. 
+Außerdem sind die gesetzlichen Grundlagen zu den Lizenzen verschiedener Technologien zu beachten, damit diese nicht verletzt werden und der FKW Software Solutions Group hierdurch kein Schaden entstehen kann.
+\newparagraph
+Ebenfalls wichtig bei der Auswahl einer Technologie ist ihre \textbf{Skalierbarkeit}. 
+Durch die Skalierbarkeit wird festgelegt, wie gut sich die Technologie an ihre Umgebung anpasst, sodass beispielsweise bei einer stark ansteigenden Anzahl an Aufrufen weiterhin genug Leistung vorhanden ist, um die Anwendung ohne Einschränkungen betreiben zu können. 
+Da keine Informationen zum Nutzungsverhalten im System des Auftraggebers vorliegen, muss das neue System an alle möglichen Nutzungsverhalten angepasst werden können, weswegen die Skalierbarkeit der Technologien ein entscheidender Punkt bei der Auswahl ist.
+\newparagraph
+Die gewählte Technologie muss sich durch einen \textbf{hohen Reifegrad} auszeichnen, damit die Wahrscheinlichkeit für grundsätzliche Änderungen während der Umsetzung reduziert wird, die durch mögliche Bugfixes in der zugrundeliegenden Technologie entstehen könnten.
+Zusätzlich muss die Technologie eine gewisse Zukunftssicherheit aufweisen, damit eine Langlebigkeit des Produkts gewährleistet werden kann. 
+Somit wird präventiv gegen einen erneuten Entwicklungsaufwand nach kurzer Zeit vorgegangen.
+\newparagraph
+Außerdem ist eine \textbf{Modularität der Technologien} von Relevanz, um die maximale Unabhängigkeit und Austauschbarkeit der Technologien zu ermöglichen. 
+Dadurch wird der Anpassungsbedarf bei Austausch einer Technologie minimiert.
+
+\subsection{Anwendung der Ausschlusskriterien}
+In diesem Abschnitt wird mithilfe der vorhin definierten Ausschlusskriterien eine mögliche Technologie für die Realisierung von \ac{aMRS} ausgewählt. Hierzu werden die folgenden Aspekte betrachtet.
+\begin{itemize}
+  \item Art der Applikation
+  \item Hardware
+  \item Betriebssystem
+  \item Programmiersprache
+  \item Framework/Bibliothek
+\end{itemize}\noindent
+Nicht auf alle Aspekte können alle Ausschlusskriterien angewandt werden, weshalb lediglich die anwendbaren Kriterien verwendet werden.
+% Die Ausschlusskriterien werden auf die Themen
+%  - Art der Applikation
+%  - Hardware
+%  - Betriebsystem
+%  - Programmiersprache
+%  - Framework/Bibliotheken
+% angewendet. 
+% Hierbei wird nur zu den jeweiligen anwendbaren Kriterien Stellung bezogen.
+\subsubsection*{Art der Applikation}
+Softwareprojekte starten oft mit der grundsätzlichen Frage, ob eine Web-, Mobile- oder Desktop-Applikation entwickelt werden soll. Die Entscheidung fällt hierbei auf eine Web-Applikation, da diese die höchste End-User-Kompatibilität bietet, weil sie auf allen Geräten, die über einen Browser verfügen, genutzt werden kann und nicht installiert werden muss.
+Sie bietet ebenfalls den Vorteil der Cross-Plattform-Kompatibilität.
+Außerdem sind bei den Entwicklern umfangreiche Kenntnisse im Bereich der Webentwicklung vorhanden weshalb eine Web-Applikation zusätzlich kostengünstiger ist. 
+Deshalb werden im weiteren Vorgehen nur Ansätze mit Web-Applikation verfolgt.
+% Wenn es um die Entscheidung geht, ob eine Web-, Mobile- oder Desktop-Applikation entwickelt werden soll, ist die Entscheidung klar: Eine Web-Applikation ist die bessere Wahl, da sie auf allen Geräten, die über einen Browser verfügen, genutzt werden kann und nicht installiert werden muss. Außerdem ist die Entwicklung einer Web-Applikation kostengünstiger, da die Entwickler bereits Erfahrung mit der Entwicklung von Web-Applikationen haben.
+\subsubsection*{Hardware}
+Die Auswirkungen von Hardware auf die Qualität und Leistungsfähigkeit der Anwendung ist nicht signifikant, weswegen lediglich die weite Verbreitung als Kriterium anzuführen ist.
+Sowohl x86-Prozessoren als auch ARM Prozessoren gelten als weit verbreitet.
+Diese sollen eine mögliche Auswahl für die darauffolgenden Entscheidungen bilden.
+% Hardware: 
+% - Hohe Skalierbarkeit und Leistungsfähigkeit: ARM- oder x86-Architektur
+\subsubsection*{Betriebssystem}
+Die am meisten verbreiteten Betriebssysteme sind Android, iOS, Windows, macOS und Linux in verschiedenen Distributionen.
+Die mobilen Betriebssysteme werden für \ac{aMRS} nicht weiter betrachtet, da sie nicht geeignet sind.
+% //TODO: ggf Begründung
+Für x86-Prozessoren sind alle anwendbaren Betriebssysteme Windows, macOS und Linux vorhanden, für die ARM-Prozessoren können Windows oder bestimmte Distributionen von Linux verwendet werden.
+Die Betriebssysteme Windows und macOS sind proprietär, außerdem werden für diese möglicherweise kostspielige Lizenzen benötigt, was einen Nachteil bei der Skalierung der Anwendung darstellt.
+Aufgrund dessen wird zur Implementierung der Anwendung ein Linux Betriebssystem ausgewählt.
+% Betriebssystem:
+% - Weite Verbreitung: Linux
+% - Skalierbarkeit: Linux (Kosten)
+% - Technologische Unabhängigkeit: Linux (MacOS und Windows sind proprietäre Betriebssysteme)
+% - Unsere Auswahl: Ubuntu Server 20.04 LTS weil zukunftssicher und stabil
+
+\subsubsection*{Programmiersprache}
+
+Die Entscheidung, welche Programmiersprache benutzt werden soll, wird durch die Tabelle \ref{tab:programming_languages} für eine Auswahl von drei Programmiersprachen repräsentativ dargestellt.
+
+\begin{table}[H]
+  \begin{tabular} {|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
+    \hline
+    & C\# & Python & Javascript \\
+    \hline
+    Vorwissen der Entwickler & 3/8 & 8/8 & 7/8 \\
+    \hline
+    Weite Verbreitung & 3,173 \%\cite{noauthor_github_nodate} & 26,25 \%\cite{noauthor_github_nodate} & 9,02 \%\cite{noauthor_github_nodate} \\
+    \hline
+    Möglichkeiten der Web-Entwicklung (End-User-Kompatibilität) & Blazor & Django, Flask & Next.JS, Node.JS \\
+    \hline
+    Hoher Reifegrad bzw. Zukunftsicherheit & End of Life .NET6: 2024\cite{noauthor_.net_nodate} & End of Life Python 3.11: 2027\cite{noauthor_python_nodate} & ECMAScript wird jährlich geupdated\cite{noauthor_javascript_nodate} \\
+    \hline
+  \end{tabular}
+  \caption{Übersicht der Programmiersprachen}
+  \label{tab:programming_languages}
+\end{table}\noindent
+Wie der Tabelle entnommen werden kann, sind alle drei Programmiersprachen weit verbreitet und werden von den Entwicklern bereits verwendet.
+Außerdem bieten alle Sprachen eine akzeptable End of Life.
+Da so keine Entscheidung für eine Programmiersprache gefunden werden kann, werden zusätzlich zur Sprache die angebotenen Frameworks und Bibliotheken verglichen, um somit eine Entscheidung für Sprache und Framework zu treffen.
+
+% Programmiersprache:
+
+% | | C# | Python | Javascript |
+% | --- | --- | --- | --- |
+% | Vorwissen der Entwickler | 3/8 | 8/8 | 7/8 |
+% | Weite Verbreitung | 3,173 % | 26,25 % | 9,02 % |
+% | Möglichkeiten der Web-Entwicklung (End-User-Kompatibilität) | Blazor | Django, Flask | Next.JS, Node.JS | 
+% | Hoher Reifegrad bzw. Zukunftsicherheit | End of Life .NET6: 2024 | End of Life Python 3.11: 2027 | ECMAScript wird jährlich geupdated |
+
+
+\subsubsection*{Framework/Bibliotheken}
+
+Für die Entwicklung von Webanwendungen gibt es verschiedene Frameworks und Bibliotheken, die essenziell für eine effiziente Umsetzung sind.
+Da prinzipiell alle oben genannten Programmiersprachen für die Entwicklung von Webanwendungen geeignet sind, werden repräsentative Frameworks und Bibliotheken für die drei Programmiersprachen C\#, Python und Javascript in der Tabelle \ref{tab:frameworks} verglichen.
+
+\begin{table}[H]
+  \begin{tabular} {|m{3cm}|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
+    \hline
+    & Blazor & Django & Next.JS & Node.JS \\
+    \hline
+    Vorwissen der Entwickler & 1/8 & 6/8 & 5/8 & 5/8 \\
+    \hline
+    Erreichung hoher End-User-Kompatibilität & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) & cross-platform (Web-Applikation) \\
+    \hline
+    Hoher Reifegrad bzw. Zukunftsicherheit & End of Life .NET6: 2024\cite{noauthor_.net_nodate} & End of Life Django 3.2: 2024\cite{noauthor_django_nodate} & End of Life unbekannt & End of Life Node.JS 18: 2025\cite{noauthor_node.js_nodate}\\
+    \hline
+  \end{tabular}
+  \caption{Übersicht der Frameworks und Bibliotheken}
+  \label{tab:frameworks}
+\end{table}\noindent
+Wie die Tabelle zeigt, ist Blazor das Framework mit dem geringsten Vorwissen der Entwickler und ist somit für die Entwicklung der Webanwendung am ineffizientesten.
+Somit scheidet auch C\# als Programmiersprache aus.
+Da Next.JS noch sehr neu auf dem Markt ist und kein End of Life bekannt ist, ist der Reifegrad für uns nicht ausreichend.
+% Gerade jetzt gab es ein Sprung (Version 12 auf Version 13), bei welcher viele Unternehmen ihr Apps anpassen mussten.  
+Da Django mit Python als Full-Stack-Framework im Vergleich zu Node.JS bekannter bei den Entwicklern ist, würden wir diese Kombination von Programmiersprache und Framework empfehlen.
+Mit dieser Open-Source-Kombination lässt sich auch das im Klassenmodell definierte Zusammenspiel von Controller und View ideal umsetzen.
+Für die Datenbank empfehlen wir eine relationale PostgreSQL-Datenbank.
+Die Applikation sollte für einen Ubuntu Server 20.04 betriebenen Rechner entwickelt werden, der einen x86 Prozessor verwendet.
+Für die Schnittstelle zum Informationsportal empfehlen wir die Verwendung von HTTP und JSON.
+% Framework/Bibliotheken:
+
+% | | Blazor | Django | Next.JS | Node.JS |
+% | --- | --- | --- | --- | --- |
+% | Vorwissen der Entwickler | 1/8 | 6/8 | 5/8 | 5/8 |
+% | Erreichung hoher End-User-Kompatibilität | cross-platform (Web-Applikation) | cross-platform (Web-Applikation) | cross-platform (Web-Applikation) | cross-platform (Web-Applikation) |
+% | Hoher Reifegrad bzw. Zukunftsicherheit | End of Life .NET6: 2024 | End of Life Django 3.2: 2024 | unbekannt | End of Life Node.JS 18: 2025 |
+
+% Quellen:
+
+% programmiersprachen: https://madnight.github.io/githut/#/pushes/2022/3
+% dot net 6: https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core
+% python 3.11: https://endoflife.date/python
+% django 3.2: https://endoflife.date/django
+% node.js 18: https://endoflife.date/nodejs
+% ecmascript: https://www.w3schools.com/js/js_versions.asp
