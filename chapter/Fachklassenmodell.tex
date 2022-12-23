@@ -6,11 +6,11 @@ berücksichtigt, um eine Entkopplung der Komponenten zu verwirklichen. Durch die
 Wartbarkeit, Erweiterbarkeit und die Qualität der Software sichergestellt werden. \newline
 
 \noindent Wie in \autoref{fig:Fachklassendiagramm} zu erkennen, ist das System in zwei unabhängige Teilsysteme
-untergliedert, welche nur über die Datenspeicherung verbunden sind. Diese nutzt das Repository Pattern, um eine
+untergliedert, die nur über die Datenspeicherung verbunden sind. Diese nutzt das Repository Pattern, um eine
 Entkopplung der Datenzugriffsschicht vom restlichen System zu ermöglichen. Über das Adapter Pattern ist eine
 Schnittstelle zwischen \hyperref[gls:informationsportal]{Informationsportal} und \ac{aMRS} geplant. Zum andern bietet \ac{aMRS} mit ihrer eigenen GUI die
 Möglichkeit den im \autoref{cha:AblaufbeschreibungderSystemidee} beschriebenen Bewertungsprozess durchzuführen. Dieser Prozess nutzt einen Adapter
-zu einem externen \hyperref[gls:ocr-System]{OCR-System} und diverse Validatoren, welche mithilfe des Iterator Pattern leicht an zukünftige
+zu einem externen \hyperref[gls:ocr-System]{OCR-System} und diverse Validatoren, die mithilfe des Iterator Pattern leicht an zukünftige
 Kundenwünsche angepasst werden können.
 
 \newpage
@@ -39,11 +39,11 @@ Die Klasse Rating enthält Informationen über das zu bewertende Dish, eine Wert
 
 \subsection*{Adapter}
 \noindent \textbf{aMRSAdapter}\\
-Die Klasse aMRSAdapter gitb dem \hyperref[gls:informationsportal]{Informationsportal} die Möglichkeit Bewertungen vom \ac{aMRS} abzurufen.
+Die Klasse aMRSAdapter gibt dem \hyperref[gls:informationsportal]{Informationsportal} die Möglichkeit, Bewertungen vom \ac{aMRS} abzurufen.
 \newline
 
 \noindent \textbf{InformationsPortalAdapter}\\
-Die Klasse InformationsPortalAdapter gitb dem \ac{aMRS} die Möglichkeit \hyperref[gls:tagesgericht]{Tagesgerichte} vom \hyperref[gls:informationsportal]{Informationsportal} abzurufen.
+Die Klasse InformationsPortalAdapter gibt dem \ac{aMRS} die Möglichkeit, \hyperref[gls:tagesgericht]{Tagesgerichte} vom \hyperref[gls:informationsportal]{Informationsportal} abzurufen.
 Dabei werden die \hyperref[gls:tagesgericht]{Tagesgerichte} nach Klassifikation gefiltert.
 \newline
 
